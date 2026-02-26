@@ -348,3 +348,14 @@ a:hover {
 .footer__privacy {
   color: #A7A8A9;
 }
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.socials__items {
+  display: flex;
+  gap: 10px;
+}
