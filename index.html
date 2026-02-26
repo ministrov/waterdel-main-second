@@ -5,13 +5,425 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/vite.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Onest:wght@100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="src/style.css">
   <title>waterdel-main-second</title>
 </head>
 
 <body class="page__body">
-  <header class="page__header"></header>
-  <main class="page__main"></main>
-  <footer class="page__footer"></footer>
+  <header class="page__header header">
+    <div class="container">
+      <div class="header__content">
+        <div id="mobile-menu-burger" class="header__burger-wrapper header-tablet__aside">
+          <button class="header__burger link-tool" type="button">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2.66666 8H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+              </path>
+              <path d="M2.66666 12H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round"></path>
+              <path d="M2.66666 4H13.3333" stroke="white" stroke-width="1.6" stroke-linecap="round"
+                stroke-linejoin="round">
+              </path>
+            </svg>
+          </button>
+        </div>
+
+        <div class="header__logo logo">
+          <a class="logo__link logo" href="#hero">
+            <img class="logo__icon" src="image/logo.png" width="140" height="52" alt="WATER Delivery logo in focus">
+          </a>
+        </div>
+
+        <nav class="header__nav">
+          <ul id="menu-header-menu" class="header__menu">
+            <li class="header__menu-item">
+              <a href="#problems" class="header__menu-link">Проблемы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#solution" class="header__menu-link">Решения</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#how-it-works" class="header__menu-link">Как работает</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#components" class="header__menu-link">Оснащение</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#for-whom" class="header__menu-link">Кому подходит</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#reviews" class="header__menu-link">Отзывы</a>
+            </li>
+            <li class="header__menu-item">
+              <a href="#faq" class="header__menu-link">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+
+        <div class="header__contacts header-tablet__aside">
+          <a href="tel:+74950031222" class="header-phone">
+            <span class="header-phone__icon link-tool">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                  d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
+                </path>
+              </svg>
+            </span>
+            <span class="header-phone__value">+7 495 003 12 22</span>
+          </a>
+
+          <button class="header__btn button button--primary">Заказать звонок</button>
+        </div>
+      </div>
+    </div>
+
+    <div id="mobile-menu" class="header__mobile-menu mobile-menu">
+      <button class="mobile-menu__close" type="button">
+        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="none">
+          <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 1 1 11M1 1l10 10">
+          </path>
+        </svg>
+      </button>
+      <a href="/" class="mobile-menu__logo">
+        <img class="mobile-menu__icon" src="img/logo.png" width="140" height="52" alt="WATER Delivery logo in focus">
+      </a>
+      <nav class="mobile__nav">
+        <ul id="menu-header-menu-1" class="mobile__menu">
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-8">
+            <a href="/#problems" aria-current="page">Проблемы</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-9">
+            <a href="/#solution" aria-current="page">Решения</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-10">
+            <a href="/#how-it-works" aria-current="page">Как работает</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-11">
+            <a href="/#components" aria-current="page">Оснащение</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-12">
+            <a href="/#for-whom" aria-current="page">Кому подходит</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-13">
+            <a href="/#reviews" aria-current="page">Отзывы</a>
+          </li>
+          <li
+            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-14">
+            <a href="/#faq" aria-current="page">FAQ</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__contacts mobile__contacts">
+        <a href="tel:+74950031222" class="header-phone">
+          <span class="header-phone__icon link-tool">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+              <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
+              </path>
+            </svg>
+          </span>
+          <span class="header-phone__value">+7 495 003 12 22</span>
+        </a>
+        <button class="header__btn button button--primary" data-modal="callback">Заказать звонок</button>
+      </div>
+    </div>
+
+    <div class="header__progressbar progressbar"></div>
+  </header>
+
+  <main class="page__main">
+    <h1 class="visually-hidden">Промо сайт водоочистительных систем для воды</h1>
+
+    <section id="block-hero" class="hero">
+      <h2 class="hero__title">
+        <p class="hero__title-start">Установим</p>
+        <p class="hero__title-end">система очистки воды <span class="highlighed">за 2 часа</span></p>
+      </h2>
+
+      <p class="hero__text">Расчитайте стоимость установки и получитесистему со скидкой 50%</p>
+      <div class="hero__btn-wrapper">
+        <button class="hero__button button button--secondary">Рассчитать стоимость установки</button>
+      </div>
+      <div class="hero__conditions conditions">
+        <p class="conditions__text">Особые условия для:</p>
+        <ul class="conditions__list">
+          <li class="conditions__item">
+            <img class="conditions__item-image" href="icons/condition.svg" width="40" height="40"
+              alt="Иконка галочки на светло синем фоне в виде звездочки">
+            <p class="conditions__item-text"></p>
+          </li>
+          <li class="conditions__item">
+            <img class="conditions__item-image" href="icons/condition.svg" width="40" height="40"
+              alt="Иконка галочки на светло синем фоне в виде звездочки">
+            <p class="conditions__item-text"></p>
+          </li>
+          <li class="conditions__item">
+            <img class="conditions__item-image" href="icons/condition.svg" width="40" height="40"
+              alt="Иконка галочки на светло синем фоне в виде звездочки">
+            <p class="conditions__item-text"></p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="hero__promo promo">
+        <div class="promo__fire">
+          <img src="icons/fire.svg" width="47" height="63" alt="Иконка огня красно-желтого цвета">
+
+          Установок со скидкой осталось: 3
+        </div>
+        <div class="promo__title">
+          <p class="promo__title-start highlighed">Акционная</p>
+          <p class="promo__title-end">стоимость установки:</p>
+        </div>
+        <div class="promo__values">
+          <span class="promo__new-value">1 490 ₽</span>
+          <span class="promo__old-value">3 890 ₽</span>
+        </div>
+        <div class="promo__tag">Акция до 31 декабря</div>
+      </div>
+    </section>
+
+    <section id="block-roomtypes" class="roomtypes">
+      <h2 class="roomtypes__title">Устанавливаем <span class="highlighed--second">системы очистки воды</span> для любых
+        помещений</h2>
+      <ul class="roomtypes__list">
+        <li class="roomtypes__item">
+          <div class="roomtypes__item-top">
+            <img src="image/roomtypes-img-1.jpg" width="" height="" alt="Картинка карточки номер 1">
+          </div>
+          <div class="roomtypes__item-bottom">
+            <h3 class="roomtypes__item-title">Квартира</h3>
+
+            <ul class="roomtypes__bottom-list bottom-list">
+              <li class="bottom-list__item">
+                <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                  alt="Иконка галочки в квадратном светло-голубом фоне">
+                <p class="bottom-list__item-text">Компактные системы под мойку</p>
+              </li>
+              <li class="bottom-list__item">
+                <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                  alt="Иконка галочки в квадратном светло-голубом фоне">
+                <p class="bottom-list__item-text">Не занимают место на кухне</p>
+              </li>
+              <li class="bottom-list__item">
+                <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                  alt="Иконка галочки в квадратном светло-голубом фоне">
+                <p class="bottom-list__item-text">Установка за 1,5-2 часа</p>
+              </li>
+            </ul>
+
+            <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+          </div>
+        </li>
+        <li class="roomtypes__item">
+          <h3 class="roomtypes__item-title">Частный дом</h3>
+
+          <ul class="roomtypes__bottom-list bottom-list">
+            <li class="bottom-list__item">
+              <img class="bottom-list__item-icon" src="image/roomtypes-img-2.jpg" width="453" height="275"
+                alt="Иконка галочки в квадратном светло-голубом фоне">
+              <p class="bottom-list__item-text">Решения для скважины и колодца</p>
+            </li>
+            <li class="bottom-list__item">
+              <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                alt="Иконка галочки в квадратном светло-голубом фоне">
+              <p class="bottom-list__item-text">Удаление железа и жёсткости</p>
+            </li>
+            <li class="bottom-list__item">
+              <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                alt="Иконка галочки в квадратном светло-голубом фоне">
+              <p class="bottom-list__item-text">Производительность до 1000 л/сутки</p>
+            </li>
+          </ul>
+
+          <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+        </li>
+        <li class="roomtypes__item">
+          <h3 class="roomtypes__item-title">Офис \ кафе</h3>
+
+          <ul class="roomtypes__bottom-list bottom-list">
+            <li class="bottom-list__item">
+              <img class="bottom-list__item-icon" src="image/roomtypes-img-3.jpg" width="453" height="275"
+                alt="Иконка галочки в квадратном светло-голубом фоне">
+              <p class="bottom-list__item-text">Высокая производительность</p>
+            </li>
+            <li class="bottom-list__item">
+              <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                alt="Иконка галочки в квадратном светло-голубом фоне">
+              <p class="bottom-list__item-text">Обслуживание по договору</p>
+            </li>
+            <li class="bottom-list__item">
+              <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                alt="Иконка галочки в квадратном светло-голубом фоне">
+              <p class="bottom-list__item-text">Экономия на кулерах</p>
+            </li>
+          </ul>
+
+          <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+        </li>
+      </ul>
+    </section>
+
+    <section id="block-quiz" class="quiz">
+      <h2 class="quiz__title">
+        Ответьте на 3 <span class="highlighed--second">вопроса</span> и мы подберем идеальное решение и <span
+          class="highlighed--second">зафиксируем скидку 50%</span>
+      </h2>
+
+      <div class="quiz__titles">
+        <p class="quiz__titles-text">Какую проблему с водой вы хотите решить?</p>
+        <p class="quiz__titles-text">Сколько человек в семье будут регулярно пить эту воду?</p>
+        <p class="quiz__titles-text active">Есть ли под мойкой свободное местодля бака и блоков фильтров, а также
+          розетка?</p>
+      </div>
+
+      <form class="quiz__form quiz-form">
+        <fieldset class="quiz-form__row">
+          <div class="quiz-form__left">
+            <p class="quiz-form__left-title">Какую проблему с водой вы хотите решить?</p>
+            <div class="quiz-form__left-steps">
+              <span style="width: 33.333333333333%"></span>
+            </div>
+            <div class="quiz-form__left-question">
+              <span>Вопрос 1 из 3</span>
+              <button class="button button--secondary" type="button">Следующий вопрос</button>
+            </div>
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+          <div class="quiz-form__right">
+            <p class="quiz-form__right-text">Выберите один или несколько вариантов:</p>
+
+            <ul class="quiz-form__right-grid">
+              <li class="quiz-form__right-item"></li>
+              <li class="quiz-form__right-item"></li>
+              <li class="quiz-form__right-item"></li>
+              <li class="quiz-form__right-item"></li>
+              <li class="quiz-form__right-item"></li>
+            </ul>
+          </div>
+        </fieldset>
+        <fieldset class="quiz-form__row"></fieldset>
+        <fieldset class="quiz-form__row"></fieldset>
+        <fieldset class="quiz-form__row quiz-form__row--final"></fieldset>
+      </form>
+    </section>
+
+    <section id="block-problems" class="problems">
+      <h2 class="problems__title">Низкое <span class="highlighed--second">качество воды</span> влечетза собой много
+        проблем</h2>
+
+      <ul class="problems__items">
+        <li class="problems__item">
+          <img class="problems__item-image" src="icons/problems-icon-1.svg" width="60" height="60"
+            alt="Иконка сложенного мужского кошелька">
+          <p class="problems__item-text">Необходимость тратиться на доставку воды <strong>каждый месяц</strong></p>
+        </li>
+        <li class="problems__item">
+          <img class="problems__item-image" src="icons/problems-icon-2.svg" width="60" height="60"
+            alt="Иконка 19 литровой бутылки воды">
+          <p class="problems__item-text">Таскать <strong>тяжелые бутылкии</strong> следить за сроками доставки</p>
+        </li>
+        <li class="problems__item">
+          <img class="problems__item-image" src="icons/problems-icon-3.svg" width="60" height="60"
+            alt="Иконка электрического чайника">
+          <p class="problems__item-text"><strong>Постоянная накипь</strong> на чайниках и посуде при использовании воды
+            из крана</p>
+        </li>
+        <li class="problems__item">
+          <img class="problems__item-image" src="icons/problems-icon-3.svg" width="60" height="60"
+            alt="Иконка чеклиста здоровья">
+          <p class="problems__item-text"><strong>Проблемы со здоровьем</strong> у детей и семьи при использовании
+            железистой водопроводной воды</p>
+        </li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="page__footer footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__logo">
+          <a class="custom-logo-link" href="#hero" aria-label="На главную">
+            <img src="image/logo.png" width="140" height="52" alt="WATER Delivery logo in focus">
+          </a>
+        </div>
+
+        <div class="footer__socials socials">
+          <span class="socials__slogan">Наши соц.сети:</span>
+
+          <ul class="socials__items">
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="icons/vk.svg" width="35" height="35" alt="Иконки социальной сети Вконтакте">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="icons/tg.svg" width="35" height="35" alt="Иконки социальной сети Телеграм">
+              </a>
+            </li>
+            <li class="socials__item">
+              <a class="socials__link" href="#">
+                <img src="icons/rutube.svg" width="35" height="35" alt="Иконки социальной сети Рутюба">
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__contacts">
+          <div class="footer__footer-contact footer-contact">
+            <p class="footer-contact__title">Пн — Пт с 9:00 до 18:00</p>
+            <a href="tel:+74950031222" class="footer-contact__link">
+              <span class="link-tool">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M9.22 11.05a.7.7 0 0 0 .81-.2l.24-.32a1.3 1.3 0 0 1 1.06-.53h2a1.33 1.33 0 0 1 1.34 1.33v2a1.33 1.33 0 0 1-1.34 1.34 12 12 0 0 1-12-12 1.33 1.33 0 0 1 1.34-1.34h2A1.33 1.33 0 0 1 6 2.67v2a1.3 1.3 0 0 1-.53 1.06l-.32.24a.7.7 0 0 0-.19.82 9.3 9.3 0 0 0 4.26 4.26">
+                  </path>
+                </svg>
+              </span>
+              <span class="footer-contact__phone">+7 495 003 12 22</span>
+            </a>
+          </div>
+
+          <div class="footer-contact footer-contact--email">
+            <p class="footer-contact__title">По любым обращениям:</p>
+            <a href="mailto:order@waterdel.ru" class="footer-contact__link">
+              <span class="link-tool">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" viewBox="0 0 16 16">
+                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="m14.67 4.67-6 3.81a1.3 1.3 0 0 1-1.34 0l-6-3.81"></path>
+                  <path stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6"
+                    d="M13.33 2.67H2.67c-.74 0-1.34.6-1.34 1.33v8c0 .74.6 1.33 1.34 1.33h10.66c.74 0 1.34-.6 1.34-1.33V4c0-.74-.6-1.33-1.34-1.33">
+                  </path>
+                </svg>
+              </span>
+              <span class="footer-contact__email">order@waterdel.ru</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">© ООО «ВАМ-ВОДА» 2021-2024, все права защищены</p>
+        <a href="https://waterdel.store/privacy-policy/" target="_blank" class="footer__privacy">Политика
+          конфиденциальности</a>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
