@@ -85,6 +85,43 @@ a:hover {
   overflow: hidden;
 }
 
+.button {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: var(--secondary-font);
+  border-radius: 100vmax;
+  border: none;
+  cursor: pointer;
+  transition: background-color var(--transition-value);
+}
+
+.button--primary {
+  font-weight: 800;
+  color: var(--accent-blue);
+  background-color: white;
+}
+
+.button--secondary {
+  position: relative;
+  overflow: hidden;
+  padding: 32px 37px;
+  font-size: 18px;
+  font-weight: 700;
+  background-color: var(--accent-green);
+  color: #163800;
+  transition: background-color var(--transition-value);
+}
+
+.button--primary:hover {
+  background-color: var(--accent-green);
+}
+
+.button--secondary:hover {
+  background-color: #91FFF2;
+}
+
 /* Header */
 
 .header {
