@@ -58,12 +58,13 @@ a:hover {
   color: var(--accent-green);
 }
 
-.page__body {
+
+/* .page__body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   overflow: hidden;
-}
+} */
 
 .container {
   box-sizing: content-box;
@@ -319,8 +320,11 @@ a:hover {
 
 /* Main content */
 
-.page__main {
-  margin-top: auto;
+/* Hero */
+
+.hero {
+  padding-top: 200px;
+  background-color: purple;
 }
 
 /* Footer */
