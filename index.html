@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="page" lang="en">
+<html class="page" lang="ru">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="/vite.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
@@ -34,7 +34,7 @@
         </div>
 
         <div class="header__logo logo">
-          <a class="logo__link logo" href="#hero">
+          <a class="logo__link" href="#hero">
             <img class="logo__icon" src="image/logo.png" width="140" height="52" alt="WATER Delivery logo in focus">
           </a>
         </div>
@@ -93,34 +93,27 @@
         <img class="mobile-menu__icon" src="img/logo.png" width="140" height="52" alt="WATER Delivery logo in focus">
       </a>
       <nav class="mobile__nav">
-        <ul id="menu-header-menu-1" class="mobile__menu">
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-8">
-            <a href="/#problems" aria-current="page">Проблемы</a>
+        <ul id="mobile-menu-list" class="mobile__menu">
+          <li class="menu-item">
+            <a href="/#problems">Проблемы</a>
           </li>
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-9">
-            <a href="/#solution" aria-current="page">Решения</a>
+          <li class="menu-item">
+            <a href="/#solution">Решения</a>
           </li>
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-10">
-            <a href="/#how-it-works" aria-current="page">Как работает</a>
+          <li class="menu-item">
+            <a href="/#how-it-works">Как работает</a>
           </li>
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-11">
-            <a href="/#components" aria-current="page">Оснащение</a>
+          <li class="menu-item">
+            <a href="/#components">Оснащение</a>
           </li>
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-12">
-            <a href="/#for-whom" aria-current="page">Кому подходит</a>
+          <li class="menu-item">
+            <a href="/#for-whom">Кому подходит</a>
           </li>
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-13">
-            <a href="/#reviews" aria-current="page">Отзывы</a>
+          <li class="menu-item">
+            <a href="/#reviews">Отзывы</a>
           </li>
-          <li
-            class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-14">
-            <a href="/#faq" aria-current="page">FAQ</a>
+          <li class="menu-item">
+            <a href="/#faq">FAQ</a>
           </li>
         </ul>
       </nav>
@@ -135,7 +128,7 @@
           </span>
           <span class="header-phone__value">+7 495 003 12 22</span>
         </a>
-        <button class="header__btn button button--primary" data-modal="callback">Заказать звонок</button>
+        <button class="header__btn button button--primary">Заказать звонок</button>
       </div>
     </div>
 
@@ -147,8 +140,8 @@
 
     <section id="block-hero" class="page__hero hero">
       <h2 class="hero__title">
-        <p class="hero__title-start">Установим</p>
-        <p class="hero__title-end">система очистки воды <span class="highlighed">за 2 часа</span></p>
+        <span class="hero__title-start">Установим</span>
+        <span class="hero__title-end">система очистки воды <span class="highlighed">за 2 часа</span></span>
       </h2>
 
       <p class="hero__text">Расчитайте стоимость установки и получитесистему со скидкой 50%</p>
@@ -180,12 +173,11 @@
         <div class="promo__fire">
           <img class="promo__fire-icon" src="icons/fire.svg" width="47" height="63"
             alt="Иконка огня красно-желтого цвета">
-
           Установок со скидкой осталось: 3
         </div>
         <div class="promo__title">
-          <p class="promo__title-start highlighed">Акционная</p>
-          <p class="promo__title-end">стоимость установки:</p>
+          <span class="promo__title-start highlighed">Акционная</span>
+          <span class="promo__title-end">стоимость установки:</span>
         </div>
         <div class="promo__values">
           <span class="promo__new-value">1 490 ₽</span>
@@ -201,11 +193,10 @@
       <ul class="roomtypes__list">
         <li class="roomtypes__item">
           <div class="roomtypes__item-top">
-            <img src="image/roomtypes-img-1.jpg" width="" height="" alt="Картинка карточки номер 1">
+            <img src="image/roomtypes-img-1.jpg" alt="Картинка карточки номер 1">
           </div>
           <div class="roomtypes__item-bottom">
             <h3 class="roomtypes__item-title">Квартира</h3>
-
             <ul class="roomtypes__bottom-list bottom-list">
               <li class="bottom-list__item">
                 <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
@@ -223,55 +214,60 @@
                 <p class="bottom-list__item-text">Установка за 1,5-2 часа</p>
               </li>
             </ul>
-
             <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
           </div>
         </li>
         <li class="roomtypes__item">
-          <h3 class="roomtypes__item-title">Частный дом</h3>
-
-          <ul class="roomtypes__bottom-list bottom-list">
-            <li class="bottom-list__item">
-              <img class="bottom-list__item-icon" src="image/roomtypes-img-2.jpg" width="453" height="275"
-                alt="Иконка галочки в квадратном светло-голубом фоне">
-              <p class="bottom-list__item-text">Решения для скважины и колодца</p>
-            </li>
-            <li class="bottom-list__item">
-              <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                alt="Иконка галочки в квадратном светло-голубом фоне">
-              <p class="bottom-list__item-text">Удаление железа и жёсткости</p>
-            </li>
-            <li class="bottom-list__item">
-              <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                alt="Иконка галочки в квадратном светло-голубом фоне">
-              <p class="bottom-list__item-text">Производительность до 1000 л/сутки</p>
-            </li>
-          </ul>
-
-          <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+          <div class="roomtypes__item-top">
+            <img src="image/roomtypes-img-2.jpg" width="453" height="275" alt="Картинка карточки номер 2">
+          </div>
+          <div class="roomtypes__item-bottom">
+            <h3 class="roomtypes__item-title">Частный дом</h3>
+            <ul class="roomtypes__bottom-list bottom-list">
+              <li class="bottom-list__item">
+                <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                  alt="Иконка галочки в квадратном светло-голубом фоне">
+                <p class="bottom-list__item-text">Решения для скважины и колодца</p>
+              </li>
+              <li class="bottom-list__item">
+                <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                  alt="Иконка галочки в квадратном светло-голубом фоне">
+                <p class="bottom-list__item-text">Удаление железа и жёсткости</p>
+              </li>
+              <li class="bottom-list__item">
+                <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                  alt="Иконка галочки в квадратном светло-голубом фоне">
+                <p class="bottom-list__item-text">Производительность до 1000 л/сутки</p>
+              </li>
+            </ul>
+            <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+          </div>
         </li>
         <li class="roomtypes__item">
-          <h3 class="roomtypes__item-title">Офис \ кафе</h3>
-
-          <ul class="roomtypes__bottom-list bottom-list">
-            <li class="bottom-list__item">
-              <img class="bottom-list__item-icon" src="image/roomtypes-img-3.jpg" width="453" height="275"
-                alt="Иконка галочки в квадратном светло-голубом фоне">
-              <p class="bottom-list__item-text">Высокая производительность</p>
-            </li>
-            <li class="bottom-list__item">
-              <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                alt="Иконка галочки в квадратном светло-голубом фоне">
-              <p class="bottom-list__item-text">Обслуживание по договору</p>
-            </li>
-            <li class="bottom-list__item">
-              <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                alt="Иконка галочки в квадратном светло-голубом фоне">
-              <p class="bottom-list__item-text">Экономия на кулерах</p>
-            </li>
-          </ul>
-
-          <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+          <div class="roomtypes__item-top">
+            <img src="image/roomtypes-img-3.jpg" width="453" height="275" alt="Картинка карточки номер 3">
+          </div>
+          <div class="roomtypes__item-bottom">
+            <h3 class="roomtypes__item-title">Офис / кафе</h3>
+            <ul class="roomtypes__bottom-list bottom-list">
+              <li class="bottom-list__item">
+                <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                  alt="Иконка галочки в квадратном светло-голубом фоне">
+                <p class="bottom-list__item-text">Высокая производительность</p>
+              </li>
+              <li class="bottom-list__item">
+                <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                  alt="Иконка галочки в квадратном светло-голубом фоне">
+                <p class="bottom-list__item-text">Обслуживание по договору</p>
+              </li>
+              <li class="bottom-list__item">
+                <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                  alt="Иконка галочки в квадратном светло-голубом фоне">
+                <p class="bottom-list__item-text">Экономия на кулерах</p>
+              </li>
+            </ul>
+            <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+          </div>
         </li>
       </ul>
     </section>
@@ -300,8 +296,6 @@
               <span>Вопрос 1 из 3</span>
               <button class="button button--secondary" type="button">Следующий вопрос</button>
             </div>
-            <img src="" alt="">
-            <img src="" alt="">
           </div>
           <div class="quiz-form__right">
             <p class="quiz-form__right-text">Выберите один или несколько вариантов:</p>
@@ -315,14 +309,11 @@
             </ul>
           </div>
         </fieldset>
-        <fieldset class="quiz-form__row"></fieldset>
-        <fieldset class="quiz-form__row"></fieldset>
-        <fieldset class="quiz-form__row quiz-form__row--final"></fieldset>
       </form>
     </section>
 
     <section id="block-problems" class="page__problems problems">
-      <h2 class="problems__title">Низкое <span class="highlighed--second">качество воды</span> влечетза собой много
+      <h2 class="problems__title">Низкое <span class="highlighed--second">качество воды</span> влечет за собой много
         проблем</h2>
 
       <ul class="problems__items">
@@ -334,7 +325,7 @@
         <li class="problems__item">
           <img class="problems__item-image" src="icons/problems-icon-2.svg" width="60" height="60"
             alt="Иконка 19 литровой бутылки воды">
-          <p class="problems__item-text">Таскать <strong>тяжелые бутылкии</strong> следить за сроками доставки</p>
+          <p class="problems__item-text">Таскать <strong>тяжелые бутылки</strong> и следить за сроками доставки</p>
         </li>
         <li class="problems__item">
           <img class="problems__item-image" src="icons/problems-icon-3.svg" width="60" height="60"
@@ -343,7 +334,7 @@
             из крана</p>
         </li>
         <li class="problems__item">
-          <img class="problems__item-image" src="icons/problems-icon-3.svg" width="60" height="60"
+          <img class="problems__item-image" src="icons/problems-icon-4.svg" width="60" height="60"
             alt="Иконка чеклиста здоровья">
           <p class="problems__item-text"><strong>Проблемы со здоровьем</strong> у детей и семьи при использовании
             железистой водопроводной воды</p>
@@ -368,7 +359,7 @@
         <li class="system__item">
           <img class="system__item-image" src="icons/system-icon-3.svg" width="60" height="60"
             alt="Иконка крана для воды">
-          <p class="system__item-text"><strong>xxx</strong> литров в сутки</p>
+          <p class="system__item-text"><strong>до 200</strong> литров в сутки</p>
         </li>
         <li class="system__item">
           <img class="system__item-image" src="icons/system-icon-4.svg" width="60" height="60" alt="Гарантия">
@@ -387,7 +378,7 @@
               <img class="calc-form__label-image" src="icons/phone.svg" width="21" height="21"
                 alt="Иконка трубки телефона">
               <input type="tel" id="phone" name="phone" class="calc-form__input" placeholder="+7 (___) ___ - __ - __"
-                autocomplete="tel-national" required aria-describedby="phone-help">
+                autocomplete="tel-national" aria-describedby="phone-help">
             </label>
 
             <div id="phone-help" class="calc-form__help calc-form__help--sr">
@@ -397,7 +388,7 @@
 
           <div class="calc-form__acceptance">
             <div class="calc-form__checkbox-group">
-              <input type="checkbox" id="acceptance" name="acceptance" class="calc-form__checkbox" required>
+              <input type="checkbox" id="acceptance" name="acceptance" class="calc-form__checkbox">
               <label for="acceptance" class="calc-form__checkbox-label">
                 <span class="calc-form__checkbox-custom"></span>
               </label>
@@ -442,14 +433,14 @@
           <p class="filter__item-text"><strong>Постфильтр</strong> — улучшает вкус воды</p>
         </li>
         <li class="filter__item">
-          <img class="filter__item-image" src="icons/filter-icon-5.svg" width="60" height="60" alt="Минерализатор">
+          <img class="filter__item-image" src="icons/filter-icon-6.svg" width="60" height="60" alt="Минерализатор">
           <p class="filter__item-text"><strong>Минерализатор</strong> — добавляет полезные минералы</p>
         </li>
       </ul>
     </section>
 
     <section id="block-savings" class="page__savings savings">
-      <h2 class="savings__title">Экономия до <span class="highlighed--second">XXXXXXX ₽</span> в год на воде</h2>
+      <h2 class="savings__title">Экономия до <span class="highlighed--second">180 000 ₽</span> в год на воде</h2>
 
       <ul class="savings__items">
         <li class="savings__item">
@@ -517,7 +508,7 @@
         <li class="perfect__item">
           <img class="perfect__item-img" src="icons/tick.svg" width="40" height="40"
             alt="Иконка галочки на светло синем фоне в виде звездочки">
-          <p class="perfect__item-text">Живёте в доме / квартирес нестабильным давлением воды</p>
+          <p class="perfect__item-text">Живёте в доме / квартире с нестабильным давлением воды</p>
         </li>
         <li class="perfect__item">
           <img class="perfect__item-img" src="icons/tick.svg" width="40" height="40"
@@ -621,9 +612,6 @@
         <div class="container">
           <h2 class="difference__title">Система <span class="highlighted">«АБФ-ОСМО-6»</span> против <br>бутилированной
             воды</h2>
-
-          <!-- <img class="difference__bg difference__bg--left" src="img/hiw-particles.webp" width="" height="" alt="">
-          <img class="difference__bg difference__bg--right " src="img/hiw-particles.webp" width="" height="" alt=""> -->
         </div>
       </div>
       <div class="difference__wrapper">
@@ -747,7 +735,6 @@
     </section>
 
     <section id="block-form" class="page__deal deal">
-      <!-- <img src="" alt=""> -->
 
       <div class="deal__container container">
         <div class="deal__content">
@@ -782,11 +769,11 @@
                 <input class="deal__checkbox" type="checkbox" name="acceptence" value="checkbox" checked>
                 <span class="deal__checkbox-indicator"></span>
               </span>
-              <p class="deal__consent-text">
+              <span class="deal__consent-text">
                 Я даю <a href="https://waterdel.store/privacy-policy/" target="_blank">согласие на обработку</a>
                 моих персональных данных в соответствии с
                 <a href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
-              </p>
+              </span>
             </label>
           </form>
         </div>
@@ -858,7 +845,7 @@
       <h2 class="team__title">Команда <span class="highlighed--second">Water Delivery</span></h2>
 
       <div class="team__row">
-        <section class="team__lead">
+        <div class="team__lead">
           <article class="team__card team__card--lead">
             <figure class="team__photo-wrap">
               <img class="team__photo" src="image/team-image-1.jpg" width="571" height="711" alt="Петров Иван">
@@ -875,15 +862,15 @@
               За 5 лет мы установили более 2&nbsp;500 систем и ни разу не подвели клиентов
             </blockquote>
           </figure>
-        </section>
+        </div>
 
-        <section class="team__slider">
+        <div class="team__slider">
           <article class="team__card">
             <figure class="team__photo-wrap">
-              <img class="team__photo" src="image/team-image-2.jpg" width="571" height="711" alt="Петров Иван">
+              <img class="team__photo" src="image/team-image-2.jpg" width="571" height="711" alt="Сергей Иванов">
               <figcaption class="team__caption">
-                <h3 class="team__name">Петров Иван</h3>
-                <p class="team__role">Основатель и генеральный директор</p>
+                <h3 class="team__name">Сергей Иванов</h3>
+                <p class="team__role">Технический директор</p>
               </figcaption>
             </figure>
           </article>
@@ -900,24 +887,24 @@
 
           <article class="team__card">
             <figure class="team__photo-wrap">
-              <img class="team__photo" src="image/team-image-4.jpg" width="571" height="711" alt="Иванов Петр">
+              <img class="team__photo" src="image/team-image-4.jpg" width="571" height="711" alt="Анна Смирнова">
               <figcaption class="team__caption">
-                <h3 class="team__name">Иванов Петр</h3>
-                <p class="team__role">Менеджер по продажам</p>
+                <h3 class="team__name">Анна Смирнова</h3>
+                <p class="team__role">Руководитель отдела сервиса</p>
               </figcaption>
             </figure>
           </article>
 
           <article class="team__card">
             <figure class="team__photo-wrap">
-              <img class="team__photo" src="image/team-image-5.jpg" width="571" height="711" alt="Иванов Петр">
+              <img class="team__photo" src="image/team-image-5.jpg" width="571" height="711" alt="Дмитрий Козлов">
               <figcaption class="team__caption">
-                <h3 class="team__name">Иванов Петр</h3>
-                <p class="team__role">Менеджер по продажам</p>
+                <h3 class="team__name">Дмитрий Козлов</h3>
+                <p class="team__role">Инженер-монтажник</p>
               </figcaption>
             </figure>
           </article>
-        </section>
+        </div>
       </div>
 
       <div class="team__stats stats">
@@ -1016,8 +1003,7 @@
                 alt="Иконка стрелка вниз">
             </div>
             <div class="faq__question-answer">
-              В среднем — каждые 6 месяцев, в зависимости от качества исходной воды и интенсивности использования.
-              Обратноосмотическая мембрана служит 2–3 года.
+              Гарантия на оборудование — 1 год, на монтажные работы — 2 года.
             </div>
           </li>
           <li class="faq__question">
@@ -1027,8 +1013,8 @@
                 alt="Иконка стрелка вниз">
             </div>
             <div class="faq__question-answer">
-              В среднем — каждые 6 месяцев, в зависимости от качества исходной воды и интенсивности использования.
-              Обратноосмотическая мембрана служит 2–3 года.
+              В стоимость входит: система фильтрации, монтажные работы, материалы и бесплатная доставка по Москве в
+              пределах МКАД.
             </div>
           </li>
         </ul>
@@ -1043,7 +1029,7 @@
         <li class="mini-form__item">
           <img class="mini-form__item-img" src="icons/tick.svg" width="40" height="40"
             alt="Иконка галочки на светло синем фоне в виде звездочки">
-          <p class="mini-form__item-text">Перезвоним вамза 30 секунд</p>
+          <p class="mini-form__item-text">Перезвоним вам за 30 секунд</p>
         </li>
         <li class="mini-form__item">
           <img class="mini-form__item-img" src="icons/tick.svg" width="40" height="40"
@@ -1058,7 +1044,7 @@
       </ul>
 
       <form class="mini-form__form fancy-form">
-        <legend class="fancy-form__legend">Заказать установку со скидкой 50%</legend>
+        <p class="fancy-form__legend">Заказать установку со скидкой 50%</p>
 
         <fieldset class="fancy-form__fieldset">
           <div class="fancy-form__fire">
@@ -1086,11 +1072,11 @@
             <input class="fancy-form__checkbox" type="checkbox" name="acceptence" value="checkbox" checked>
             <span class="fancy-form__checkbox-indicator"></span>
           </span>
-          <p class="fancy-form__consent-text">
+          <span class="fancy-form__consent-text">
             Я даю <a href="https://waterdel.store/privacy-policy/" target="_blank">согласие на обработку</a>
             моих персональных данных в соответствии с
             <a href="https://waterdel.store/privacy-policy/" target="_blank">Политикой конфиденциальности</a>
-          </p>
+          </span>
         </label>
       </form>
     </section>
@@ -1099,7 +1085,7 @@
       <h2 class="visually-hidden">Секция контактов с картой и информацией о компании</h2>
 
       <div class="contacts__map">
-        <img class="contacts__map-image" src="image/map.jpg" width="" height=""
+        <img class="contacts__map-image" src="image/map.jpg" width="1400" height="542"
           alt="В фокусе карта местонахождения компании в Москве">
       </div>
 
@@ -1110,7 +1096,7 @@
             <img class="contacts__top-icon" src="icons/contacts-icon-1.svg" width="40" height="40" alt="Телефон">
           </div>
           <div class="contacts__bottom">
-            <a class="contacts__bottom-link" href="#">
+            <a class="contacts__bottom-link" href="tel:+74951452333">
               +7 (495) 145 - 23 - 33
             </a>
             <p class="contacts__bottom-text">Звоните на наш телефон по любым вопросам</p>
@@ -1122,10 +1108,8 @@
             <img class="contacts__top-icon" src="icons/contacts-icon-2.svg" width="40" height="40" alt="Адрес офиса">
           </div>
           <div class="contacts__bottom">
-            <a class="contacts__bottom-link" href="#">
-              +7 (495) 145 - 23 - 33
-            </a>
-            <p class="contacts__bottom-text">Качественно установили системы очистки воды</p>
+            <p class="contacts__bottom-link">г. Москва, ул. Строителей, д. 7</p>
+            <p class="contacts__bottom-text">Центральный офис компании</p>
           </div>
         </li>
         <li class="contacts__item">
@@ -1134,8 +1118,8 @@
             <img class="contacts__top-icon" src="icons/contacts-icon-3.svg" width="40" height="40" alt="Email">
           </div>
           <div class="contacts__bottom">
-            <a class="contacts__bottom-link" href="#">
-              +7 (495) 145 - 23 - 33
+            <a class="contacts__bottom-link" href="mailto:info@waterdel.ru">
+              info@waterdel.ru
             </a>
             <p class="contacts__bottom-text">Пишите на наш email адрес по любым вопросам</p>
           </div>
@@ -1146,9 +1130,7 @@
             <img class="contacts__top-icon" src="icons/contacts-icon-4.svg" width="40" height="40" alt="Режим работы">
           </div>
           <div class="contacts__bottom">
-            <a class="contacts__bottom-link" href="#">
-              +7 (495) 145 - 23 - 33
-            </a>
+            <p class="contacts__bottom-link">Ежедневно с 9:00 до 21:00</p>
             <p class="contacts__bottom-text">Мы работаем без перерывов и выходных</p>
           </div>
         </li>
