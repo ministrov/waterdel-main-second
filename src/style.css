@@ -6,6 +6,9 @@
   --container-width: 1400px;
 
   --basic-white: #ffffff;
+  --title-text: #35393D;
+  --title-text-200: #2E363E;
+  --card-border: #E5E5E5;
   --stroke: rgba(255, 255, 255, 0.06);
   --text-100: #D9EDFF;
   --accent-green: #C1FB68;
@@ -568,6 +571,88 @@ a:hover {
 .hero__scroll-icon {
   display: flex;
   width: 171px;
+}
+
+/* Roomtypes */
+
+.roomtypes {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.roomtypes__title {
+  max-width: 870px;
+  margin-bottom: 40px;
+  font-family: var(--ff-headers);
+  font-size: 38px;
+  font-weight: 900;
+  line-height: 1.4;
+  /* text-align: center; */
+  color: var(--title-text);
+  text-transform: uppercase;
+}
+
+.roomtypes__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+
+.roomtypes__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--card-border);
+  border-radius: 25px;
+}
+
+.roomtypes__item-top {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 453 / 275;
+  width: 100%;
+  border-radius: 25px;
+}
+
+.roomtypes__item-bottom {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 35px 34px 34px;
+}
+
+.roomtypes__item-title {
+  font-family: var(--ff-headers);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+  color: var(--title-text);
+}
+
+.roomtypes__bottom-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.bottom-list__item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--title-text-200);
+  font-size: 16px;
+  line-height: 165%;
+}
+
+.roomtypes__btn {
+  width: 100%;
+  padding: 21px;
+  margin-top: auto;
 }
 
 /* Footer */
