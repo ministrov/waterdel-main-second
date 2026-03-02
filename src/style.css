@@ -5,6 +5,7 @@
   --container-padding: 24px;
   --container-width: 1400px;
 
+  --basic-white: #ffffff;
   --accent-green: #C1FB68;
   --accent-blue: #0A4B88;
   --accent-light-blue: #9AEAF8;
@@ -29,8 +30,8 @@ body {
   position: relative;
   font-family: var(--ff-main);
   font-size: 15px;
-  background-color: white;
   color: #303437;
+  background-color: var(--basic-white);
 }
 
 body.popup-open {
@@ -57,14 +58,6 @@ a {
 a:hover {
   color: var(--accent-green);
 }
-
-
-/* .page__body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  overflow: hidden;
-} */
 
 .container {
   box-sizing: content-box;
@@ -323,8 +316,40 @@ a:hover {
 /* Hero */
 
 .hero {
+  overflow: hidden;
   padding-top: 200px;
-  background-color: purple;
+  color: var(--basic-white);
+  background-color: var(--accent-blue);
+  border-radius: 0 0 40px 40px;
+}
+
+.hero__content-wrapper {
+  display: flex;
+}
+
+.hero__bubbles {
+  display: none;
+}
+
+.hero__content {
+  width: 70%;
+}
+
+.hero__right {
+  width: 30%;
+}
+
+.hero__title {
+  position: relative;
+  font-family: var(--ff-headers);
+  font-size: 57px;
+  font-weight: 900;
+  line-height: 62px;
+  text-transform: uppercase;
+}
+
+.hero__title-start {
+  display: block;
 }
 
 /* Footer */
