@@ -328,6 +328,7 @@ a:hover {
 /* Hero */
 
 .hero {
+  position: relative;
   overflow: hidden;
   padding-top: 200px;
   color: var(--basic-white);
@@ -335,12 +336,39 @@ a:hover {
   border-radius: 0 0 40px 40px;
 }
 
+.hero::before {
+  content: "";
+  position: absolute;
+  bottom: -244px;
+  right: 110px;
+  width: 955px;
+  height: 955px;
+  border-radius: 50%;
+  opacity: 0.49;
+  background-color: var(--basic-white);
+  filter: blur(250px);
+}
+
 .hero__content-wrapper {
   display: flex;
 }
 
 .hero__bubbles {
-  display: none;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.hero__bg-img {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  max-width: 1835px;
+  height: 100%;
 }
 
 .hero__content {
@@ -438,8 +466,8 @@ a:hover {
 .hero__content-wrapper .promo__fire {
   position: absolute;
   top: -23px;
-  right: 68px;
-  max-width: 233px;
+  right: 200px;
+  max-width: 235px;
 }
 
 .promo__fire {
