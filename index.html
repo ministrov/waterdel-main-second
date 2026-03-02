@@ -291,73 +291,81 @@
     </section>
 
     <section id="block-quiz" class="page__quiz quiz">
-      <h2 class="quiz__title">
-        Ответьте на 3 <span class="highlighed--second">вопроса</span> и мы подберем идеальное решение и <span
-          class="highlighed--second">зафиксируем скидку 50%</span>
-      </h2>
+      <div class="container">
+        <h2 class="quiz__title">
+          Ответьте на 3 <span class="highlighed--second">вопроса</span> и мы подберем идеальное решение и <span
+            class="highlighed--second">зафиксируем скидку 50%</span>
+        </h2>
 
-      <div class="quiz__titles">
-        <p class="quiz__titles-text">Какую проблему с водой вы хотите решить?</p>
-        <p class="quiz__titles-text">Сколько человек в семье будут регулярно пить эту воду?</p>
-        <p class="quiz__titles-text active">Есть ли под мойкой свободное местодля бака и блоков фильтров, а также
-          розетка?</p>
+        <div class="quiz__titles">
+          <p class="quiz__titles-text">Какую проблему с водой вы хотите решить?</p>
+          <p class="quiz__titles-text">Сколько человек в семье будут регулярно пить эту воду?</p>
+          <p class="quiz__titles-text active">Есть ли под мойкой свободное местодля бака и блоков фильтров, а также
+            розетка?</p>
+        </div>
+
+        <form class="quiz__form quiz-form">
+          <fieldset class="quiz-form__row">
+            <div class="quiz-form__left">
+              <p class="quiz-form__left-title">Какую проблему с водой вы хотите решить?</p>
+              <div class="quiz-form__left-steps">
+                <span style="width: 33.333333333333%"></span>
+              </div>
+              <div class="quiz-form__left-question">
+                <span>Вопрос 1 из 3</span>
+                <button class="button button--secondary" type="button">Следующий вопрос</button>
+              </div>
+            </div>
+            <div class="quiz-form__right">
+              <p class="quiz-form__right-text">Выберите один или несколько вариантов:</p>
+
+              <ul class="quiz-form__right-grid">
+                <li class="quiz-form__right-item"></li>
+                <li class="quiz-form__right-item"></li>
+                <li class="quiz-form__right-item"></li>
+                <li class="quiz-form__right-item"></li>
+                <li class="quiz-form__right-item"></li>
+              </ul>
+            </div>
+          </fieldset>
+        </form>
       </div>
-
-      <form class="quiz__form quiz-form">
-        <fieldset class="quiz-form__row">
-          <div class="quiz-form__left">
-            <p class="quiz-form__left-title">Какую проблему с водой вы хотите решить?</p>
-            <div class="quiz-form__left-steps">
-              <span style="width: 33.333333333333%"></span>
-            </div>
-            <div class="quiz-form__left-question">
-              <span>Вопрос 1 из 3</span>
-              <button class="button button--secondary" type="button">Следующий вопрос</button>
-            </div>
-          </div>
-          <div class="quiz-form__right">
-            <p class="quiz-form__right-text">Выберите один или несколько вариантов:</p>
-
-            <ul class="quiz-form__right-grid">
-              <li class="quiz-form__right-item"></li>
-              <li class="quiz-form__right-item"></li>
-              <li class="quiz-form__right-item"></li>
-              <li class="quiz-form__right-item"></li>
-              <li class="quiz-form__right-item"></li>
-            </ul>
-          </div>
-        </fieldset>
-      </form>
     </section>
 
     <section id="block-problems" class="page__problems problems">
-      <h2 class="problems__title">Низкое <span class="highlighed--second">качество воды</span> влечет за собой много
-        проблем</h2>
+      <div class="container">
+        <h2 class="problems__title">Низкое <span class="highlighed--second">качество воды</span> влечет за собой много
+          проблем</h2>
 
-      <ul class="problems__items">
-        <li class="problems__item">
-          <img class="problems__item-image" src="icons/problems-icon-1.svg" width="60" height="60"
-            alt="Иконка сложенного мужского кошелька">
-          <p class="problems__item-text">Необходимость тратиться на доставку воды <strong>каждый месяц</strong></p>
-        </li>
-        <li class="problems__item">
-          <img class="problems__item-image" src="icons/problems-icon-2.svg" width="60" height="60"
-            alt="Иконка 19 литровой бутылки воды">
-          <p class="problems__item-text">Таскать <strong>тяжелые бутылки</strong> и следить за сроками доставки</p>
-        </li>
-        <li class="problems__item">
-          <img class="problems__item-image" src="icons/problems-icon-3.svg" width="60" height="60"
-            alt="Иконка электрического чайника">
-          <p class="problems__item-text"><strong>Постоянная накипь</strong> на чайниках и посуде при использовании воды
-            из крана</p>
-        </li>
-        <li class="problems__item">
-          <img class="problems__item-image" src="icons/problems-icon-4.svg" width="60" height="60"
-            alt="Иконка чеклиста здоровья">
-          <p class="problems__item-text"><strong>Проблемы со здоровьем</strong> у детей и семьи при использовании
-            железистой водопроводной воды</p>
-        </li>
-      </ul>
+        <ul class="problems__items">
+          <li class="problems__item">
+            <img class="problems__item-image" src="icons/problems-icon-1.svg" width="60" height="60"
+              alt="Иконка сложенного мужского кошелька">
+            <p class="problems__item-text">Необходимость тратиться <br> на доставку воды <strong>каждый месяц</strong>
+            </p>
+          </li>
+          <li class="problems__item">
+            <img class="problems__item-image" src="icons/problems-icon-2.svg" width="60" height="60"
+              alt="Иконка 19 литровой бутылки воды">
+            <p class="problems__item-text">Таскать <strong>тяжелые бутылки</strong> <br> и следить за сроками доставки
+            </p>
+          </li>
+          <li class="problems__item">
+            <img class="problems__item-image" src="icons/problems-icon-3.svg" width="60" height="60"
+              alt="Иконка электрического чайника">
+            <p class="problems__item-text"><strong>Постоянная накипь</strong> на чайниках и посуде <br> при
+              использовании
+              воды
+              из крана</p>
+          </li>
+          <li class="problems__item">
+            <img class="problems__item-image" src="icons/problems-icon-4.svg" width="60" height="60"
+              alt="Иконка чеклиста здоровья">
+            <p class="problems__item-text"><strong>Проблемы со здоровьем</strong> у детей и семьи <br> при использовании
+              железистой водопроводной воды</p>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <section id="block-system" class="page__system system">
