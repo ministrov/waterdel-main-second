@@ -545,6 +545,27 @@ a:hover {
   background-color: var(--basic-white);
 }
 
+.hero__scroll {
+  position: absolute;
+  z-index: 4;
+  right: 215px;
+  bottom: 0;
+  background-color: red;
+}
+
+.hero__scroll::before {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-image: url('../public/icons/arrow-long-down.svg');
+  background-repeat: no-repeat;
+}
+
+.hero__scroll-icon {
+  display: flex;
+  width: 171px;
+}
+
 /* Footer */
 
 .footer {
