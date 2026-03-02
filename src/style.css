@@ -550,14 +550,18 @@ a:hover {
   z-index: 4;
   right: 215px;
   bottom: 0;
-  background-color: red;
 }
 
 .hero__scroll::before {
+  content: '';
   position: absolute;
-  right: 0;
-  bottom: 0;
-  background-image: url('../public/icons/arrow-long-down.svg');
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 24px;
+  height: 24px;
+  background-size: 100% 100%;
+  background-image: url("../icons/arrow-long-down.svg");
   background-repeat: no-repeat;
 }
 
