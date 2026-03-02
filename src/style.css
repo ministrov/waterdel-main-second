@@ -732,6 +732,7 @@ a:hover {
 
 .system__bg-box {
   position: absolute;
+  z-index: -1;
   top: 0;
   left: 0;
   width: 100%;
@@ -759,6 +760,65 @@ a:hover {
   font-style: normal;
   font-weight: 700;
   line-height: 32px;
+}
+
+.calc-form__row .calc-form__label {
+  flex-grow: 1;
+}
+
+.calc-form__row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.calc-form__label {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 21px 20px;
+  border-radius: 100vmax;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--basic-white);
+  transition: all var(--transition-value);
+}
+
+.calc-form__input {
+  flex-grow: 1;
+  max-width: none;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.calc-form__input::placeholder {
+  font-family: var(--ff-main);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--basic-white);
+}
+
+.calc-form__help {
+  display: none;
+}
+
+.calc-form__btn {
+  flex-shrink: 0;
+  padding: 22px 30px;
+}
+
+.calc-form__acceptance {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 13px;
+  color: #92AFCA;
+  cursor: pointer;
 }
 
 /* Footer */
