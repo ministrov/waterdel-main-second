@@ -20,6 +20,8 @@
   --stroke: rgba(255, 255, 255, 0.06);
   --text-100: #D9EDFF;
   --accent-green: #C1FB68;
+  --accent-green-100: #EDF4E2;
+  --accent-green-500: #23430E;
   --accent-blue: #0A4B88;
   --accent-blue-100: #17BBEE;
   --accent-blue-200: #0E457A;
@@ -1360,9 +1362,33 @@ fieldset[data-step="final"] {
   background-color: var(--light-gray);
 }
 
+.steps__bubbles {
+  position: absolute;
+}
+
+.steps__bubbles-1 {
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  width: 487px;
+  height: auto;
+}
+
+.steps__bubbles-2 {
+  z-index: -1;
+  top: 0;
+  right: 0;
+  width: 424px;
+  height: auto;
+}
+
 .steps__title {
   margin-bottom: 40px;
   text-align: center;
+}
+
+.steps__purification-swiper {
+  margin-bottom: 40px;
 }
 
 .steps__purification-swiper .swiper-wrapper {
@@ -1370,6 +1396,151 @@ fieldset[data-step="final"] {
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
+
+.purification-swiper__slide {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--card-border);
+  border-radius: 25px;
+  border: none;
+  background-color: var(--basic-white);
+}
+
+.purification-swiper__image-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  aspect-ratio: 453 / 275;
+  border-radius: 25px;
+  overflow: hidden;
+}
+
+.purification-swiper__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.purification-swiper__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  padding: 35px 34px 34px;
+}
+
+.purification-swiper__title {
+  font-size: 23px;
+  font-weight: 600;
+  font-family: var(--ff-headers);
+  line-height: 32px;
+  color: var(--title-text);
+}
+
+.purification-swiper__text {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  font-size: 15px;
+  line-height: 165%;
+  color: var(--title-text-200);
+}
+
+.purification-swiper__time {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: auto;
+  padding: 6px 11px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 165%;
+  color: var(--accent-green-500);
+  background-color: var(--accent-green-100);
+  border-radius: 900px;
+}
+
+.purification-swiper__time::before {
+  content: '';
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTgiIGhlaWdodD0iMTgiIHZpZXdCb3g9IjAgMCAxOCAxOCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTkgNC41VjlMMTIgMTAuNSIgc3Ryb2tlPSIjMjM0MzBFIiBzdHJva2Utd2lkdGg9IjEuNiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CjxwYXRoIGQ9Ik05IDE2LjVDMTMuMTQyMSAxNi41IDE2LjUgMTMuMTQyMSAxNi41IDlDMTYuNSA0Ljg1Nzg2IDEzLjE0MjEgMS41IDkgMS41QzQuODU3ODYgMS41IDEuNSA0Ljg1Nzg2IDEuNSA5QzEuNSAxMy4xNDIxIDQuODU3ODYgMTYuNSA5IDE2LjVaIiBzdHJva2U9IiMyMzQzMEUiIHN0cm9rZS13aWR0aD0iMS42IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiLz4KPC9zdmc+Cg==);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+}
+
+.purification-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.purification-nav__pagination {
+  width: auto !important;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.purification-nav .swiper-pagination-bullet {
+  margin: 0 !important;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.purification-nav .swiper-pagination-bullet::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #D5DDE5;
+  transition: all 0.3s ease;
+}
+
+.purification-nav .swiper-pagination-bullet-active::before {
+  border-color: transparent;
+  background-color: #0A4B88;
+}
+
+.purification-nav__arrow {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 15px;
+  background-color: #E7EDF3;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.purification-nav__arrow svg path {
+  transition: stroke 0.3s ease;
+}
+
+.purification-nav__arrow:hover {
+  background-color: #0A4B88;
+}
+
+.purification-nav__arrow:hover svg path {
+  stroke: white;
+}
+
+
+/* .steps__request {}
+
+.request {} */
 
 /* Footer */
 
