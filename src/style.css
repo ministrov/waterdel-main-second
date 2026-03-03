@@ -1349,6 +1349,28 @@ fieldset[data-step="final"] {
   object-fit: cover;
 }
 
+/* Steps */
+
+.steps {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding-bottom: 90px;
+  padding-top: 90px;
+  background-color: var(--light-gray);
+}
+
+.steps__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.steps__purification-swiper .swiper-wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
 /* Footer */
 
 .footer {
