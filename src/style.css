@@ -13,6 +13,7 @@
   --title-text-100: #4D5052;
   --title-text-200: #2E363E;
   --title-text-300: #5C5F64;
+  --title-text-400: #595C5F;
   --card-border: #E5E5E5;
   --basic-gray: #303437;
   --light-gray: #EFF7FF;
@@ -1174,15 +1175,53 @@ fieldset[data-step="final"] {
 
 .savings__item {
   position: relative;
-  z-index: 1;
   padding: 25px;
   background-color: var(--basic-white);
   box-shadow: 0 0 67px 0 rgba(213, 223, 234, 0.60);
 }
 
-/* .savings__item--final {
+.savings__item--final {
+  z-index: 1;
+}
 
-} */
+.savings__item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: -18px;
+  width: 40px;
+  height: 40px;
+  background-image: url('../icons/saving-icon.svg');
+  transform: translateY(-50%);
+}
+
+.savings__item:first-child {
+  border-radius: 15px 0 0 15px;
+}
+
+.savings__item--final .savings__item-text {
+  color: var(--basic-white);
+}
+
+.savings__item--final .savings__item-slogan {
+  margin-top: -4px;
+  font-size: 31px;
+  font-style: normal;
+  font-weight: 700;
+  color: var(--basic-white);
+}
+
+.savings__bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 0 15px 15px 0;
+}
 
 .savings__item-image {
   display: inline-block;
@@ -1190,7 +1229,6 @@ fieldset[data-step="final"] {
 }
 
 .savings__item-text {
-  /* margin-top: 13px; */
   font-size: 16px;
   font-weight: 700;
   line-height: 150%;
@@ -1201,6 +1239,49 @@ fieldset[data-step="final"] {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+}
+
+.savings__icon {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  right: -18px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.savings__list-item {
+  flex: 1 1 calc((100% - 120px) / 4);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.savings__list-item-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 15px;
+  background: linear-gradient(140deg, #BAFFF7 2.65%, #18DECA 100%);
+  box-shadow: -1.326px -1.326px 7.071px 0 rgba(255, 255, 255, 0.30) inset, 2.652px 2.652px 8.839px 0 rgba(255, 255, 255, 0.45) inset;
+}
+
+.savings__list-item-title {
+  /* margin-bottom: 4px; */
+  font-family: var(--ff-headers);
+  font-size: 17px;
+  font-weight: 600;
+  text-transform: unset;
+}
+
+.savings__list-item-text {
+  font-size: 15px;
+  line-height: 1.54;
+  color: var(--title-text-400);
 }
 
 /* Footer */
