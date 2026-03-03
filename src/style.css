@@ -14,8 +14,10 @@
   --title-text-200: #2E363E;
   --title-text-300: #5C5F64;
   --title-text-400: #595C5F;
+  --title-text-500: #96B2CC;
   --card-border: #E5E5E5;
   --basic-gray: #303437;
+  --basic-gray-100: #242627;
   --light-gray: #EFF7FF;
   --stroke: rgba(255, 255, 255, 0.06);
   --text-100: #D9EDFF;
@@ -1800,11 +1802,44 @@ fieldset[data-step="final"] {
   transform: rotate(350deg);
 }
 
+/* Deal */
+
+.deal {
+  z-index: 1;
+  overflow: hidden;
+  position: relative;
+  color: var(--basic-white);
+  background-color: var(--accent-blue);
+}
+
+.deal__container {
+  display: flex;
+}
+
+.deal__content {
+  z-index: 1;
+  flex-shrink: 0;
+  width: 60%;
+  padding: 90px 0 60px;
+}
+
+.deal__title {
+  color: var(--basic-white);
+}
+
+.deal__subtitle {
+  margin-bottom: 20px;
+  font-size: 21px;
+  font-weight: 500;
+  line-height: 1.65;
+  color: var(--title-text-500);
+}
+
 /* Footer */
 
 .footer {
   padding: 40px 0;
-  background-color: #242627;
+  background-color: var(--basic-gray-100);
 }
 
 .footer__logo {
