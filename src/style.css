@@ -799,6 +799,19 @@ a:hover {
   cursor: pointer;
 }
 
+.quiz-form__cart::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: linear-gradient(180deg, rgba(41, 46, 51, 0.00) 19.7%, rgba(41, 46, 51, 0.80) 100%);
+  border-radius: 15px;
+  transition: .3s;
+}
+
 .quiz-form__cart-img {
   position: absolute;
   z-index: -2;
@@ -807,6 +820,55 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.quiz-form__check {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-end;
+  width: 24px;
+  height: 24px;
+  border: 1px solid var(--white-400);
+  background-color: var(--basic-white);
+  transition: .3s;
+}
+
+.quiz-form__box>input[type="checkbox"]~.quiz-form__cart .quiz-form__check {
+  border-radius: 4px;
+}
+
+.quiz-form__box>input:checked~.quiz-form__cart .quiz-form__check {
+  background-color: var(--accent-green);
+  border-color: var(--accent-green);
+}
+
+.quiz-form__check::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
+  opacity: 0;
+  transition: .3s;
+}
+
+.quiz-form__box>input[type="checkbox"]~.quiz-form__cart .quiz-form__check::before {
+  background-image: url("../icons/quiz-form-tick.svg");
+}
+
+.quiz-form__box>input:checked~.quiz-form__cart .quiz-form__check::before {
+  opacity: 1;
+}
+
+.quiz-form__cart-text {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 131%;
+  color: var(--basic-white);
 }
 
 /* Problems */
