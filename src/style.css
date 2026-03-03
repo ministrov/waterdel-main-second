@@ -7,6 +7,7 @@
 
   --basic-white: #ffffff;
   --accent-white: #F9FAFB;
+  --white-300: #E9EFF5;
   --title-text: #35393D;
   --title-text-200: #2E363E;
   --card-border: #E5E5E5;
@@ -722,6 +723,40 @@ a:hover {
   font-size: 26px;
   font-weight: 700;
   line-height: 32px;
+}
+
+.quiz-form__left-steps {
+  height: 8px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  background-color: var(--white-300);
+  border-radius: 900px;
+}
+
+.quiz-form__left-steps-line {
+  display: block;
+  width: 10%;
+  height: 100%;
+  background: linear-gradient(90deg, #C1FB68 0%, #66B900 100%);
+  transition: width 0.4s ease;
+  border-radius: 900px;
+}
+
+.quiz-form__left-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 23px;
+}
+
+.quiz-form__left-question-value {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.quiz-form__left-btn {
+  padding: 21px 30px;
+  font-size: 16px;
 }
 
 /* Problems */
