@@ -708,6 +708,12 @@ a:hover {
   box-shadow: -51px 496px 140px 0 rgba(50, 76, 103, 0.00), -33px 317px 128px 0 rgba(50, 76, 103, 0.01), -18px 178px 108px 0 rgba(50, 76, 103, 0.03), -8px 79px 80px 0 rgba(50, 76, 103, 0.04), -2px 20px 44px 0 rgba(50, 76, 103, 0.05);
 }
 
+fieldset[data-step="2"],
+fieldset[data-step="3"],
+fieldset[data-step="final"] {
+  display: none;
+}
+
 .quiz-form__left {
   position: relative;
   z-index: 1;
@@ -748,6 +754,25 @@ a:hover {
   align-items: center;
   justify-content: space-between;
   gap: 23px;
+}
+
+.quiz-form__bubbles {
+  position: absolute;
+  z-index: -2;
+  bottom: 0;
+  left: 0;
+  width: 359px;
+  height: auto;
+  object-fit: cover;
+}
+
+.quiz-form__image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 366px;
+  height: auto;
+  z-index: -1;
 }
 
 .quiz-form__left-question-value {
