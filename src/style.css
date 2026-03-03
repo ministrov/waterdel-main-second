@@ -11,6 +11,7 @@
   --white-400: #EEF0F5;
   --title-text: #35393D;
   --title-text-200: #2E363E;
+  --title-text-300: #5C5F64;
   --card-border: #E5E5E5;
   --basic-gray: #303437;
   --light-gray: #EFF7FF;
@@ -18,6 +19,7 @@
   --text-100: #D9EDFF;
   --accent-green: #C1FB68;
   --accent-blue: #0A4B88;
+  --accent-blue-100: #17BBEE;
   --accent-blue-200: #0E457A;
   --accent-blue-300: #184772;
   --accent-light-blue: #9AEAF8;
@@ -1052,6 +1054,102 @@ fieldset[data-step="final"] {
   font-size: 13px;
   color: #92AFCA;
   cursor: pointer;
+}
+
+/* Filter */
+
+.filter {
+  z-index: 1;
+  overflow: hidden;
+  padding-top: 80px;
+}
+
+.filter--style-wrap {
+  position: relative;
+  padding-bottom: 5.49vw;
+}
+
+.filter--style-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5.49vw;
+  background-image: url("../icons/block-wrap.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.filter__title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.filter__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 40px;
+  padding-bottom: 80px;
+}
+
+.filter__item {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 25px;
+  background: var(--basic-white);
+  box-shadow: 0 0 67px 0 rgba(213, 223, 234, 0.60);
+  border-radius: 20px;
+}
+
+.filter__num {
+  position: absolute;
+  top: -17px;
+  right: 25px;
+  width: 47px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 139%;
+  color: var(--basic-white);
+  background-color: var(--accent-blue-100);
+  border-radius: 10px;
+}
+
+.filter__num::after {
+  content: '';
+  position: absolute;
+  bottom: -12px;
+  left: 50%;
+  display: block;
+  border: 6px solid transparent;
+  border-top: 6px solid var(--accent-blue-100);
+  transform: translateX(-50%);
+}
+
+.filter__item-text {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  color: var(--title-text-300);
+}
+
+.filter__bg {
+  position: absolute;
+  z-index: -1;
+  width: 1260px;
+  height: auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* Footer */
