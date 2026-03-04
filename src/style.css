@@ -2434,3 +2434,104 @@ fieldset[data-step="final"] {
   display: flex;
   gap: 10px;
 }
+
+/* Modal-success */
+
+.success {
+  /* max-width: 734px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 14px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  background: rgba(5, 14, 23, 0.50);
+  transition: all var(--transition-value);
+}
+
+.success__inner {
+  max-height: 100%;
+  overflow-y: auto;
+  padding-top: 50px;
+  max-width: 734px;
+  width: 100%;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.success__border {
+  width: 100%;
+  padding: 10px;
+  border-radius: 33px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+}
+
+.success__modal.modal {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+  padding: 35px;
+  text-align: center;
+  box-shadow: 0 630px 176px 0 rgba(0, 0, 0, 0.00), 0 403px 161px 0 rgba(0, 0, 0, 0.02), 0 227px 136px 0 rgba(0, 0, 0, 0.08), 0 101px 101px 0 rgba(0, 0, 0, 0.13), 0 25px 55px 0 rgba(0, 0, 0, 0.15);
+  background: radial-gradient(119.77% 126.3% at 95.67% 0%, #1A6FBE 0%, #0A4B88 100%);
+  border-radius: 25px;
+}
+
+.modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  display: flex;
+  width: 47px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border: none;
+  outline: none;
+  border-radius: 900px;
+  background: rgba(240, 243, 246, 0.07);
+  cursor: pointer;
+  transition: opacity var(--transition-value);
+}
+
+.modal__title {
+  margin-bottom: 10px;
+  font-family: var(--ff-main);
+  font-size: 31px;
+  font-weight: 900;
+  line-height: 139%;
+  text-transform: uppercase;
+  color: var(--basic-white);
+}
+
+.modal__subtitle {
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--basic-white);
+}
+
+.success__btn-wrap {
+  padding: 8px;
+  border-radius: 900px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  max-width: 326px;
+  margin: auto;
+  width: 100%;
+}
+
+.success__btn {
+  width: 100%;
+}
+
+/* Popup */
