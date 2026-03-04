@@ -2454,6 +2454,10 @@ fieldset[data-step="final"] {
   gap: 10px;
 }
 
+.socials.socials--second {
+  display: none;
+}
+
 /* Modal-success */
 
 .success {
@@ -2688,6 +2692,35 @@ fieldset[data-step="final"] {
 
   .header-phone__value {
     font-size: 16px;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+
+  .footer__top {
+    flex-direction: column;
+  }
+
+  .footer__logo {
+    max-width: 102px;
+  }
+
+  .footer__contacts {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .footer__socials.socials {
+    display: none;
+  }
+
+  .socials.socials--second {
+    display: flex;
+  }
+
+  .socials--second .socials__slogan {
+    display: none;
   }
 }
 
