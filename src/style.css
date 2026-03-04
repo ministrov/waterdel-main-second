@@ -1878,6 +1878,43 @@ fieldset[data-step="final"] {
   object-fit: contain;
 }
 
+/* Installations */
+
+.installations {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.installations__container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.installations__title {
+  /* margin-bottom: 40px; */
+  text-align: center;
+}
+
+.installations__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.installations__btn {
+  min-width: 232px;
+  /* max-width: 232px;
+  margin-left: auto;
+  margin-right: auto; */
+  padding-top: 21px;
+  padding-bottom: 21px;
+  font-family: var(--ff-main);
+  font-size: 16px;
+  /* text-align: center; */
+}
+
 /* Footer */
 
 .footer {
