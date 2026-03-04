@@ -1812,6 +1812,18 @@ fieldset[data-step="final"] {
   background-color: var(--accent-blue);
 }
 
+.deal__bubble {
+  position: absolute;
+  z-index: -1;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
+  transform: rotate(1deg);
+  left: 0;
+  bottom: 0;
+}
+
 .deal__container {
   display: flex;
 }
@@ -1833,6 +1845,37 @@ fieldset[data-step="final"] {
   font-weight: 500;
   line-height: 1.65;
   color: var(--title-text-500);
+}
+
+.deal__image {
+  position: relative;
+  flex-grow: 1;
+}
+
+.deal__image::before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 55%;
+  right: 25%;
+  width: 127%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  opacity: 0.49;
+  background: var(--basic-white);
+  filter: blur(250px);
+}
+
+.deal__image-bg {
+  position: absolute;
+  top: 70px;
+  left: -20px;
+  width: 751px;
+  height: auto;
+  max-width: none;
+  max-height: none;
+  object-fit: contain;
 }
 
 /* Footer */
