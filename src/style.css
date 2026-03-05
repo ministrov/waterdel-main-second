@@ -981,6 +981,14 @@ fieldset[data-step="final"] {
   gap: 10px;
 }
 
+.system__item-text {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 154%;
+  color: var(--title-text);
+  opacity: 0.8;
+}
+
 .system__bg-box {
   position: absolute;
   z-index: -1;
@@ -2967,6 +2975,61 @@ fieldset[data-step="final"] {
 
   .problems__item-image {
     width: 34px;
+  }
+
+  .system {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .system__inner {
+    max-width: 498px;
+  }
+
+  .system__title {
+    max-width: 440px;
+    margin-bottom: 20px;
+  }
+
+  .system__list {
+    grid-template-columns: 1fr;
+    grid-gap: 8px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .system__item-image {
+    display: flex;
+    width: 32px;
+    height: 32px;
+  }
+
+  .calc-form {
+    padding: 30px;
+  }
+
+  .calc-form__title {
+    max-width: 289px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .calc-form__row {
+    margin-top: 13px;
+    margin-bottom: 20px;
+  }
+
+  .calc-form__label {
+    padding: 10px 19px;
+  }
+
+  .calc-form__btn {
+    padding: 12px 17px;
+    font-size: 13px;
+  }
+
+  .calc-form__acceptance {
+    margin: 0;
   }
 }
 
