@@ -3331,6 +3331,48 @@ fieldset[data-step="final"] {
   .difference__btn.difference__btn--tablet {
     display: none;
   }
+
+  .deal__bubble {
+    position: absolute;
+    width: 302px;
+    transform: rotate(358deg);
+    left: auto;
+    bottom: auto;
+    top: -77px;
+    right: -157px;
+  }
+
+  .deal__image-bg {
+    top: auto;
+    bottom: -45px;
+    right: 0;
+    width: 119%;
+    max-height: 392px;
+  }
+
+  .deal__content {
+    max-width: 463px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .deal__subtitle {
+    margin-bottom: 30px;
+    font-size: 15px;
+    line-height: 1.65;
+  }
+
+  .deal__fields {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .deal__button {
+    max-width: 314px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
