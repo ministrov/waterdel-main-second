@@ -494,21 +494,21 @@ a:hover {
   opacity: .8;
 }
 
-.promo {
-  display: flex;
-  align-items: center;
+.hero__promo {
+  position: relative;
   min-height: 175px;
-  border-radius: 25px;
-  background-color: var(--accent-blue-200);
-  backdrop-filter: blur(5.5px);
+
 }
 
-.hero__content-wrapper .promo {
-  position: relative;
+.promo {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 9px;
   padding: 25px;
+  border-radius: 25px;
+  background-color: var(--accent-blue-200);
+  backdrop-filter: blur(5.5px);
 }
 
 .promo__promo-count {
@@ -523,7 +523,8 @@ a:hover {
   font-size: 19px;
   font-weight: 600;
   line-height: 138%;
-  color: #FFF;
+  text-transform: uppercase;
+  color: var(--basic-white);
 }
 
 .promo__deal .highlighed {
@@ -2605,6 +2606,15 @@ fieldset[data-step="final"] {
     gap: 40px;
   }
 
+  .hero__content {
+    width: 45%;
+  }
+
+  .hero__right {
+    width: 40%;
+    margin-left: auto;
+  }
+
   .hero__bg-img {
     max-width: 100%;
     width: 111vw;
@@ -2770,6 +2780,31 @@ fieldset[data-step="final"] {
     margin-bottom: 20px;
   }
 
+  .hero {
+    padding-top: 117px;
+    border-radius: 0;
+  }
+
+  .hero::before {
+    width: 478px;
+    height: 478px;
+    right: -44px;
+    bottom: -186px;
+    filter: blur(125px);
+    opacity: 0.49;
+  }
+
+  .hero__content {
+    width: 336px;
+    margin-right: 40px;
+    padding-bottom: 92px;
+  }
+
+  .hero__right {
+    width: 368px;
+    margin-right: -24px;
+  }
+
   .hero__title {
     font-size: 29px;
     line-height: 36px;
@@ -2779,6 +2814,27 @@ fieldset[data-step="final"] {
   .hero__text {
     max-width: 335px;
     font-size: 19px;
+  }
+
+  .promo {
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 29px 0 0 29px;
+  }
+
+  .promo__promo-count {
+    max-width: 175px;
+    top: -15px;
+    right: 75px;
+  }
+
+  .promo-count {
+    padding: 5px 5px 5px 34px;
+  }
+
+  .promo-count__text {
+    font-size: 12px;
+
   }
 
   .roomtypes__title {
