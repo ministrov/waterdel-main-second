@@ -3144,6 +3144,31 @@ fieldset[data-step="final"] {
   .savings__list-item-text {
     font-size: 11px;
   }
+
+  .perfect {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .perfect__inner {
+    max-width: 345px;
+  }
+
+  .perfect__list {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+    max-width: 276px;
+  }
+
+  .perfect__item-img {
+    display: flex;
+    width: 25px;
+    height: 25px;
+  }
+
+  .perfect__item-text {
+    font-size: 13px;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
