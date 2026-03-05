@@ -3075,6 +3075,75 @@ fieldset[data-step="final"] {
     width: 500px;
     bottom: 120px;
   }
+
+  .savings {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .savings__title {
+    margin-bottom: 30px;
+  }
+
+  .savings__items {
+    margin-bottom: 24px;
+  }
+
+  .savings__item {
+    padding: 13px;
+    padding-bottom: 8px;
+  }
+
+  .savings__item-image {
+    display: flex;
+    width: 37px;
+  }
+
+  .savings__item-text {
+    margin-top: 7px;
+    font-size: 11px;
+  }
+
+  .savings__item-slogan {
+    margin-top: 4px;
+    font-size: 10px;
+  }
+
+  .savings__item:not(:last-child)::after {
+    width: 21px;
+    height: 21px;
+    right: -10px;
+    background-size: 21px 21px;
+    background-repeat: no-repeat;
+  }
+
+  .savings__item--final .savings__item-slogan {
+    margin-top: -2px;
+    font-size: 20px;
+  }
+
+  .savings__list {
+    gap: 15px;
+  }
+
+  .savings__list-item {
+    gap: 10px;
+  }
+
+  .savings__list-item-img {
+    display: flex;
+    border-radius: 8px;
+    width: 32px;
+  }
+
+  .savings__list-item-title {
+    margin-bottom: 2px;
+    font-size: 12px;
+  }
+
+  .savings__list-item-text {
+    font-size: 11px;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
