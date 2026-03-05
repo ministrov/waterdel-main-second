@@ -482,6 +482,7 @@ a:hover {
 }
 
 .conditions__item {
+  width: 221px;
   display: flex;
   align-items: center;
   gap: 10px;
@@ -2616,8 +2617,30 @@ fieldset[data-step="final"] {
     --container-width: 1200px;
   }
 
+  .section-title {
+    font-size: 34px;
+  }
+
   .header__content {
     gap: 40px;
+  }
+
+  .hero__bg-img {
+    max-width: 100%;
+  }
+
+  .hero__title {
+    font-size: 44px;
+    line-height: 55px;
+  }
+
+  .hero__title::before {
+    display: none;
+  }
+
+  .conditions__list {
+    flex-direction: column;
+    gap: 13px;
   }
 }
 
@@ -2692,6 +2715,24 @@ fieldset[data-step="final"] {
 
   .header-phone__value {
     font-size: 16px;
+  }
+
+  .hero {
+    padding-top: 170px;
+  }
+
+  .hero__content {
+    padding-bottom: 120px;
+  }
+
+  .hero__scroll-icon {
+    width: 120px;
+  }
+
+  .hero__scroll::before {
+    width: 18px;
+    height: 18px;
+    top: 16px;
   }
 
   .footer {
