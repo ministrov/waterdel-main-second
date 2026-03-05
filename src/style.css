@@ -40,7 +40,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* #region BASE-STYLES */
 *,
 *::before,
 *::after {
@@ -157,6 +156,7 @@ a:hover {
 }
 
 .promo-count {
+  position: relative;
   padding: 10px 10px 10px 40px;
   border-radius: 900px;
   background: radial-gradient(68.87% 73.05% at 67.96% 10.68%, #EABC59 0%, #FA511E 100%);
@@ -511,33 +511,11 @@ a:hover {
   padding: 25px;
 }
 
-.hero__content-wrapper .promo__fire {
+.promo__promo-count {
   position: absolute;
   top: -23px;
   right: 200px;
   max-width: 235px;
-}
-
-.promo__fire {
-  display: inline-block;
-  margin-bottom: 8px;
-  font-size: 15px;
-  font-weight: 700;
-  line-height: 100%;
-  padding: 13px 12px 13px 55px;
-  border-radius: 100vmax;
-  background: radial-gradient(68.87% 73.05% at 67.96% 10.68%, #EABC59 0%, #FA511E 100%);
-}
-
-.promo__fire-icon {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 44px;
-  height: 60px;
-  object-fit: contain;
-  max-width: none;
-  max-height: none;
 }
 
 .promo__deal {
@@ -556,7 +534,7 @@ a:hover {
   font-size: 19px;
   font-weight: 600;
   line-height: 138%;
-  color: #FFF;
+  color: var(--basic-white);
 }
 
 .promo__values {
@@ -643,10 +621,9 @@ a:hover {
 }
 
 .roomtypes__title {
-  max-width: 870px;
-  margin: 0 auto;
+  max-width: 800px;
   margin-bottom: 40px;
-  text-align: center;
+  text-align: left;
 }
 
 .roomtypes__list {
@@ -690,11 +667,14 @@ a:hover {
 }
 
 .roomtypes__bottom-list {
+  margin-top: 12px;
+  margin-bottom: 24px;
+}
+
+.bottom-list {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 12px;
-  margin-bottom: 24px;
 }
 
 .bottom-list__item {
@@ -2627,6 +2607,7 @@ fieldset[data-step="final"] {
 
   .hero__bg-img {
     max-width: 100%;
+    width: 111vw;
   }
 
   .hero__title {
@@ -2735,6 +2716,24 @@ fieldset[data-step="final"] {
     top: 16px;
   }
 
+  .hero__bg-img {
+    right: -11vw;
+    width: 125vw;
+  }
+
+  .roomtypes__item-bottom {
+    padding: 19px 9px;
+  }
+
+  .roomtypes__item-top {
+    border-radius: 15px;
+  }
+
+  .roomtypes__item-title {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
   .footer {
     padding: 20px 0;
   }
@@ -2765,7 +2764,56 @@ fieldset[data-step="final"] {
   }
 }
 
-@media screen and (max-width: 992px) {}
+@media screen and (max-width: 992px) {
+  .section-title {
+    font-size: 23px;
+    margin-bottom: 20px;
+  }
+
+  .hero__title {
+    font-size: 29px;
+    line-height: 36px;
+
+  }
+
+  .hero__text {
+    max-width: 335px;
+    font-size: 19px;
+  }
+
+  .roomtypes__title {
+    max-width: 512px;
+  }
+
+  .roomtypes__bottom-list {
+    margin-top: 7px;
+    margin-bottom: 14px;
+  }
+
+  .bottom-list {
+    gap: 7px;
+  }
+
+  .bottom-list__item {
+    gap: 5px;
+  }
+
+  .bottom-list__item-icon {
+    display: flex;
+    width: 14px;
+    height: 14px;
+  }
+
+  .bottom-list__item-text {
+    font-size: 11px;
+    line-height: 165%;
+  }
+
+  .roomtypes__btn {
+    padding: 12px;
+    font-size: 13px;
+  }
+}
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
 
