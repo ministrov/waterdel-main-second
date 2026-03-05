@@ -3031,6 +3031,50 @@ fieldset[data-step="final"] {
   .calc-form__acceptance {
     margin: 0;
   }
+
+  .filter {
+    padding-top: 50px;
+  }
+
+  .filter__title {
+    margin-bottom: 30px;
+  }
+
+  .filter__list {
+    grid-column-gap: 8px;
+    grid-row-gap: 21px;
+    padding-bottom: 46px;
+  }
+
+  .filter__item {
+    gap: 8px;
+    padding: 13px;
+    border-radius: 10px;
+  }
+
+  .filter__num {
+    top: -9px;
+    right: 11px;
+    width: 24px;
+    height: 22px;
+    font-size: 8px;
+    border-radius: 5px;
+  }
+
+  .filter__item-image {
+    display: flex;
+    width: 36px;
+    border-radius: 10px;
+  }
+
+  .filter__item-text {
+    font-size: 12px;
+  }
+
+  .filter__bg {
+    width: 500px;
+    bottom: 120px;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
