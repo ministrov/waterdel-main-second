@@ -3169,6 +3169,80 @@ fieldset[data-step="final"] {
   .perfect__item-text {
     font-size: 13px;
   }
+
+  .steps {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .steps__title {
+    margin-bottom: 30px;
+  }
+
+  .steps__purification-swiper {
+    margin-bottom: 20px;
+  }
+
+  .steps__purification-swiper .swiper-wrapper {
+    grid-gap: 12px;
+  }
+
+  .purification-swiper__image-wrap {
+    border-radius: 15px;
+  }
+
+  .purification-swiper__content {
+    padding: 17px;
+  }
+
+  .purification-swiper__title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .purification-swiper__time {
+    padding: 4px 8px;
+    gap: 5px;
+    font-size: 11px;
+  }
+
+  /* .steps__request {} */
+
+  .request {
+    padding: 20px 30px;
+    padding-left: 60px;
+    border-radius: 8px;
+    gap: 18px;
+  }
+
+  .request__icon {
+    width: 35px;
+    top: -15px;
+    left: 10px;
+    border-radius: 9px;
+  }
+
+  .request__text-box__title {
+    font-size: 16px;
+    line-height: 25px;
+  }
+
+  .request__text-box__text {
+    margin-top: 2px;
+    font-size: 13px;
+  }
+
+  .request__btn {
+    padding: 12px 17px;
+    font-size: 13px;
+  }
+
+  .request__bubbles-bg {
+    top: unset;
+    bottom: 0;
+    height: 59px;
+    right: 10.677vw;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
