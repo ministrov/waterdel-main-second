@@ -942,6 +942,12 @@ fieldset[data-step="final"] {
   object-fit: contain;
 }
 
+.problems__item-text {
+  font-size: 15px;
+  line-height: 1.54;
+  color: var(--title-text-400);
+}
+
 /* System */
 
 .system {
@@ -2919,6 +2925,11 @@ fieldset[data-step="final"] {
     font-size: 13px;
   }
 
+  .quiz {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
   .quiz__titles {
     margin-bottom: 12px;
   }
@@ -2930,6 +2941,32 @@ fieldset[data-step="final"] {
     line-height: 25px;
     font-weight: 700;
     color: var(--title-text);
+  }
+
+  .problems {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .problems__title {
+    max-width: 1010px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  .problems__items {
+    gap: 15px;
+  }
+
+  .problems__item {
+    flex: 1 1 calc((100% - 15px) / 2);
+    flex-direction: row;
+    align-items: flex-start;
+    column-gap: 10px;
+  }
+
+  .problems__item-image {
+    width: 34px;
   }
 }
 
