@@ -3373,6 +3373,41 @@ fieldset[data-step="final"] {
     padding-top: 12px;
     padding-bottom: 12px;
   }
+
+  .installations {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .installations__container {
+    gap: 30px;
+  }
+
+  .installations__title {
+    margin: 0;
+  }
+
+  .installations__list {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 12px;
+    grid-row-gap: 30px;
+    margin-bottom: 0;
+  }
+
+  .installations__item-pic {
+    aspect-ratio: 354 / 216;
+    border-radius: 15px;
+  }
+
+  .installations__bottom {
+    padding: 20px 19px 19px;
+  }
+
+  .installations__item-heading {
+    margin-bottom: 14px;
+    font-size: 16px;
+    line-height: 117%;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
