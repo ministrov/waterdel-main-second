@@ -2088,6 +2088,10 @@ fieldset[data-step="final"] {
   margin-top: -75px;
 }
 
+.team__card.team__card--owner {
+  display: none;
+}
+
 .team__slider .team__photo {
   width: 276px;
 }
@@ -3407,6 +3411,43 @@ fieldset[data-step="final"] {
     margin-bottom: 14px;
     font-size: 16px;
     line-height: 117%;
+  }
+
+  .team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .team__row {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .team__card.team__card--lead {
+    display: none;
+  }
+
+  .team__lead {
+    max-width: 633px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team__slider {
+    overflow: hidden;
+    overflow-x: auto;
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    width: 100vw;
+    margin-top: 0;
+    margin-left: -24px;
+    padding-left: 24px;
+  }
+
+  .team__card.team__card--owner {
+    display: block;
   }
 }
 
