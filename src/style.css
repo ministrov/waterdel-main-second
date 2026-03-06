@@ -2308,23 +2308,11 @@ fieldset[data-step="final"] {
   color: var(--basic-white);
 }
 
-.fancy-form__fire {
-  position: absolute;
-  top: -27px;
-  right: 50%;
-  width: 213px;
-  padding: 10px 16px 10px 48px;
-  font-size: 14px;
-  line-height: 115%;
-  transform: translateX(50%);
-  border-radius: 900px;
-  background: radial-gradient(68.87% 73.05% at 67.96% 10.68%, #EABC59 0%, #FA511E 100%);
-}
-
-.fancy-form__fire-icon {
-  position: absolute;
-  width: 48px;
-  left: -7px;
+.fancy-form__promo-count {
+  top: -135px;
+  left: 50%;
+  width: 191px;
+  transform: translateX(-50%);
 }
 
 /* Contacts */
@@ -3532,6 +3520,10 @@ fieldset[data-step="final"] {
   .faq__question-answer {
     padding: 10px 14px;
     font-size: 14px;
+  }
+
+  .fancy-form__promo-count {
+    max-width: 175px;
   }
 }
 
