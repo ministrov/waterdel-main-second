@@ -2819,6 +2819,10 @@ fieldset[data-step="final"] {
     margin-left: 0;
   }
 
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .footer {
     padding: 20px 0;
   }
@@ -3447,7 +3451,6 @@ fieldset[data-step="final"] {
   }
 
   .team__card {
-    /* width: 241px; */
     min-width: 241px;
   }
 
@@ -3483,6 +3486,34 @@ fieldset[data-step="final"] {
     text-align: center;
   }
 
+  .team__stats {
+    margin-top: 30px;
+  }
+
+  .stats {
+    grid-column-gap: 8px;
+    grid-row-gap: 10px;
+  }
+
+
+  .stats__item {
+    padding: 20px 10px;
+    border-radius: 8px;
+  }
+
+  .stats__label {
+    font-size: 15px;
+  }
+
+  .stats__value {
+    gap: 7px;
+    font-size: 36px;
+  }
+
+  .stats__text {
+    margin-top: 4px;
+    font-size: 11px;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
