@@ -3514,6 +3514,25 @@ fieldset[data-step="final"] {
     margin-top: 4px;
     font-size: 11px;
   }
+
+  .faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .faq__question-top {
+    padding: 15px 14px;
+    border-radius: 12px;
+  }
+
+  .faq__question-text {
+    font-size: 14px;
+  }
+
+  .faq__question-answer {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
