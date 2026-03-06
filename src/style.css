@@ -2092,9 +2092,9 @@ fieldset[data-step="final"] {
   display: none;
 }
 
-.team__slider .team__photo {
+/* .team__slider .team__photo {
   width: 276px;
-}
+} */
 
 .team__stats {
   margin-top: 40px;
@@ -3446,8 +3446,18 @@ fieldset[data-step="final"] {
     padding-left: 24px;
   }
 
+  .team__card {
+    width: 241px;
+    min-width: 241px;
+  }
+
   .team__card.team__card--owner {
     display: block;
+  }
+
+  .team__photo-wrap {
+    aspect-ratio: 241 / 300;
+    border-radius: 9px;
   }
 }
 
