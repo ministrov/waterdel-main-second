@@ -2088,9 +2088,13 @@ fieldset[data-step="final"] {
   margin-top: -75px;
 }
 
-.team__slider .team__photo {
-  width: 276px;
+.team__card.team__card--owner {
+  display: none;
 }
+
+/* .team__slider .team__photo {
+  width: 276px;
+} */
 
 .team__stats {
   margin-top: 40px;
@@ -2215,11 +2219,38 @@ fieldset[data-step="final"] {
 /* Mini-form */
 
 .mini-form {
+  overflow: hidden;
   position: relative;
   z-index: 1;
   padding-bottom: 60px;
   background-color: var(--accent-blue);
   color: var(--basic-white);
+}
+
+.mini-form--second {
+  position: relative;
+  z-index: 1;
+  overflow: visible;
+}
+
+
+.mini-form__bubbles {
+  position: absolute;
+  z-index: -1;
+  width: 564px;
+  height: auto;
+  object-fit: contain;
+  transform: rotate(346deg);
+}
+
+.mini-form__bubble--left {
+  bottom: -187px;
+  left: -13px;
+}
+
+.mini-form__bubble--right {
+  right: 59px;
+  bottom: -201px;
 }
 
 .mini-form::before {
@@ -2278,6 +2309,13 @@ fieldset[data-step="final"] {
   gap: 10px;
 }
 
+.mini-form__item-text {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 141%;
+  opacity: 0.8;
+}
+
 .mini-form__form {
   position: relative;
   width: 368px;
@@ -2304,23 +2342,49 @@ fieldset[data-step="final"] {
   color: var(--basic-white);
 }
 
-.fancy-form__fire {
-  position: absolute;
-  top: -27px;
-  right: 50%;
-  width: 213px;
-  padding: 10px 16px 10px 48px;
-  font-size: 14px;
-  line-height: 115%;
-  transform: translateX(50%);
-  border-radius: 900px;
-  background: radial-gradient(68.87% 73.05% at 67.96% 10.68%, #EABC59 0%, #FA511E 100%);
+.fancy-form__fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-.fancy-form__fire-icon {
-  position: absolute;
-  width: 48px;
-  left: -7px;
+.fancy-form__field {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 21px 20px;
+  border-radius: 100vmax;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--basic-white);
+  transition: all var(--transition-value);
+}
+
+.fancy-form__input {
+  flex-grow: 1;
+  max-width: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.fancy-form__input::placeholder {
+  font-family: var(--ff-main);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--basic-white);
+  opacity: 0.4;
+}
+
+.fancy-form__promo-count {
+  top: -135px;
+  left: 50%;
+  width: 191px;
+  transform: translateX(-50%);
 }
 
 /* Contacts */
@@ -2356,6 +2420,13 @@ fieldset[data-step="final"] {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+}
+
+.contacts__top-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 165%;
+  color: var(--title-text);
 }
 
 .contacts__bottom-link {
@@ -2813,6 +2884,14 @@ fieldset[data-step="final"] {
 
   .difference__card.card--first {
     margin-left: 0;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contacts__list {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .footer {
@@ -3407,6 +3486,214 @@ fieldset[data-step="final"] {
     margin-bottom: 14px;
     font-size: 16px;
     line-height: 117%;
+  }
+
+  .team {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .team__row {
+    flex-direction: column-reverse;
+    gap: 30px;
+  }
+
+  .team__card.team__card--lead {
+    display: none;
+  }
+
+  .team__lead {
+    max-width: 633px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team__slider {
+    /* overflow: hidden;
+    overflow-x: auto; */
+    /* display: flex;
+    align-items: stretch; */
+    gap: 16px;
+    width: 100vw;
+    margin-top: 0;
+    margin-left: -24px;
+    padding-left: 24px;
+  }
+
+  .team__card {
+    min-width: 241px;
+  }
+
+  .team__card.team__card--owner {
+    display: block;
+  }
+
+  .team__photo-wrap {
+    aspect-ratio: 241 / 300;
+    border-radius: 9px;
+  }
+
+  .team__name {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 84.524%;
+    color: var(--title-text);
+  }
+
+  .team__role {
+    font-size: 11px;
+    margin-top: 2px;
+  }
+
+  .team__quote::before {
+    width: 14px;
+    height: 10px;
+    margin-top: 2px;
+  }
+
+  .team__quote-text {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .team__stats {
+    margin-top: 30px;
+  }
+
+  .stats {
+    grid-column-gap: 8px;
+    grid-row-gap: 10px;
+  }
+
+
+  .stats__item {
+    padding: 20px 10px;
+    border-radius: 8px;
+  }
+
+  .stats__label {
+    font-size: 15px;
+  }
+
+  .stats__value {
+    gap: 7px;
+    font-size: 36px;
+  }
+
+  .stats__text {
+    margin-top: 4px;
+    font-size: 11px;
+  }
+
+  .faq {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .faq__question-top {
+    padding: 15px 14px;
+    border-radius: 12px;
+  }
+
+  .faq__question-text {
+    font-size: 14px;
+  }
+
+  .faq__question-answer {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+
+  .mini-form {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .mini-form::before {
+    top: 101px;
+    filter: blur(142px);
+  }
+
+  .mini-form__bubbles {
+    position: absolute;
+    width: 302px;
+    transform: rotate(342deg);
+  }
+
+  .mini-form__bubble--left {
+    right: unset;
+    top: unset;
+    left: -49px;
+    bottom: -156px;
+  }
+
+  .mini-form__bubble--right {
+    bottom: -72px;
+    right: 67px;
+  }
+
+  .mini-form__container {
+    justify-content: space-between;
+  }
+
+  .mini-form__content {
+    max-width: 313px;
+  }
+
+  .mini-form__content-row {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .mini-form__title {
+    margin-bottom: 5px;
+    padding-right: 0;
+  }
+
+  .mini-form__text {
+    margin-bottom: 0;
+    font-size: 15px;
+    text-align: left;
+  }
+
+  .mini-form__text-box {
+    width: 100%;
+    padding-top: 0;
+  }
+
+  .mini-form__list {
+    align-self: flex-start;
+    gap: 18px;
+    max-width: 100%;
+    padding-top: 0;
+  }
+
+  .fancy-form__promo-count {
+    max-width: 175px;
+  }
+
+  .fancy-form__fieldset {
+    gap: 20px;
+  }
+
+
+  .fancy-form__field {
+    width: 100%;
+    padding: 17px 20px;
+  }
+
+  .fancy-form__button {
+    width: 100%;
+  }
+
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .contacts__list {
+    margin-top: 20px;
   }
 }
 
