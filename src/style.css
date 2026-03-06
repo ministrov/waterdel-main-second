@@ -2422,6 +2422,13 @@ fieldset[data-step="final"] {
   width: 100%;
 }
 
+.contacts__top-title {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 165%;
+  color: var(--title-text);
+}
+
 .contacts__bottom-link {
   display: inline-block;
   font-family: var(--ff-headers);
@@ -2880,6 +2887,10 @@ fieldset[data-step="final"] {
   }
 
   .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .contacts__list {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -3524,10 +3535,10 @@ fieldset[data-step="final"] {
   }
 
   .team__name {
-    color: #35393D;
+    margin-top: 12px;
     font-size: 16px;
     line-height: 84.524%;
-    margin-top: 12px;
+    color: var(--title-text);
   }
 
   .team__role {
@@ -3674,6 +3685,15 @@ fieldset[data-step="final"] {
 
   .fancy-form__button {
     width: 100%;
+  }
+
+  .contacts {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .contacts__list {
+    margin-top: 20px;
   }
 }
 
