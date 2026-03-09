@@ -2898,6 +2898,14 @@ fieldset[data-step="final"] {
     margin-left: 0;
   }
 
+  .card__item-name {
+    position: static;
+    width: auto;
+    height: auto;
+    border-bottom: none;
+    margin-bottom: 5px;
+  }
+
   .stats {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -3880,6 +3888,17 @@ fieldset[data-step="final"] {
 
   .purification-swiper__slide {
     width: 266px;
+  }
+
+  .difference__content {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 375px;
   }
 }
 
