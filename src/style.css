@@ -3895,4 +3895,14 @@ fieldset[data-step="final"] {
     align-items: flex-start;
     column-gap: 20px;
   }
+
+  .filter__list {
+    grid-template-columns: 1fr;
+    grid-gap: 7px;
+    padding-bottom: 50px;
+  }
+
+  .filter__bg {
+    bottom: 0;
+  }
 }
