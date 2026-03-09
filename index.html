@@ -141,15 +141,19 @@
     <section id="block-hero" class="page__hero hero">
       <img class="hero__bubbles" src="image/hero-bubbles.png" width="564" height="564" alt="">
 
-      <picture>
-        <source media="(max-width: 1648px)" srcset="image/hero-banner-tablet.png">
-        <img class="hero__bg-img" src="image/hero-banner.png" width="1835" height="883"
-          alt="Баннер с установщиком водоочистительных приборов в фокусе">
-      </picture>
+      <div class="hero__bg">
+        <picture>
+          <source media="(max-width: 768px)" srcset="image/hero-banner-mobile.png">
+          <source media="(max-width: 1648px)" srcset="image/hero-banner-tablet.png">
+          <img class="hero__bg-img" src="image/hero-banner.png" width="1835" height="883"
+            alt="Баннер с установщиком водоочистительных приборов в фокусе">
+        </picture>
+      </div>
 
       <div class="container hero__content-wrapper">
         <div class="hero__content">
-          <h2 class="hero__title">Установим <br> систему очистки <br> воды <span class="highlighted">за 2 часа</span>
+          <h2 class="hero__title">Установим <br class="hero__br-one"> систему очистки <br class="hero__br-second"> воды
+            <span class="highlighted">за 2 часа</span>
           </h2>
 
           <p class="hero__text">Расчитайте стоимость установки и получите систему со скидкой 50%</p>
@@ -307,6 +311,22 @@
             </div>
           </li>
         </ul>
+
+        <div class="roomtypes__purification-nav purification-nav">
+          <div class="purification-nav__arrow prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
+              <path stroke="#36393D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M13.5 8.5h-10M8.5 3.5l-5 5 5 5"></path>
+            </svg>
+          </div>
+          <div class="purification-nav__pagination"></div>
+          <div class="purification-nav__arrow next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="none">
+              <path stroke="#36393D" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M3.5 8.5h10M8.5 3.5l5 5-5 5"></path>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -937,7 +957,6 @@
           <img class="request__bubbles-bg" src="image/request-bubble.png" width="357" height="117"
             alt="В фокусе капли воды">
         </div>
-
       </div>
     </section>
 
