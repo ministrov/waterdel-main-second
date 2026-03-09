@@ -3905,4 +3905,42 @@ fieldset[data-step="final"] {
   .filter__bg {
     bottom: 0;
   }
+
+  .savings__items {
+    grid-template-columns: 1fr;
+  }
+
+  .savings__item {
+    /* min-height: 100px; */
+    box-shadow: 0 0 34.459px 0 rgba(213, 223, 234, 0.60);
+  }
+
+  .savings__item:first-child {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .savings__item:not(:last-child)::after {
+    left: unset;
+    right: 13px;
+    top: 70px;
+    transform: rotate(90deg);
+  }
+
+  .savings__item .savings__item--final {
+    border-radius: 7px 7px 0 0;
+  }
+
+  .savings__bg {
+    border-radius: 0 0 7px 7px;
+
+  }
+
+  .savings__item-image {
+    margin-bottom: 0;
+  }
+
+  .savings__list-item {
+    flex-direction: column;
+    flex-basis: calc((100% - 120px) / 2);
+  }
 }
