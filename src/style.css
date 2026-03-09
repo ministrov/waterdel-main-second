@@ -3074,6 +3074,11 @@ fieldset[data-step="final"] {
     color: var(--title-text);
   }
 
+  .quiz-form__grid {
+    grid-gap: 10px;
+    margin-top: 14px;
+  }
+
   .problems {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -3826,6 +3831,10 @@ fieldset[data-step="final"] {
 
   .roomtypes__purification-nav {
     margin-bottom: 50px;
+  }
+
+  .quiz-form__grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
