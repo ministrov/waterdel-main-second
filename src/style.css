@@ -3740,6 +3740,10 @@ fieldset[data-step="final"] {
     padding: 12px 17px;
   }
 
+  .header__logo {
+    max-width: 96px;
+  }
+
   .hero {
     padding-top: 100px;
     padding-bottom: 70vw;
@@ -3801,4 +3805,16 @@ fieldset[data-step="final"] {
 
 @media screen and (max-width: 680px) {}
 
-@media screen and (max-width: 580px) {}
+@media screen and (max-width: 580px) {
+  .header__content {
+    justify-content: space-between;
+  }
+
+  .header-tablet__aside {
+    flex-grow: unset;
+  }
+
+  .header-phone__value {
+    display: none;
+  }
+}
