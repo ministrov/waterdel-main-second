@@ -3400,7 +3400,11 @@ fieldset[data-step="final"] {
   }
 
   .difference__header {
-    padding: 60px 0 70px;
+    padding: 50px 0 70px;
+  }
+
+  .difference__bg {
+    width: 300px;
   }
 
   .difference__title {
@@ -3413,11 +3417,9 @@ fieldset[data-step="final"] {
   }
 
   .difference__bg--right {
-    display: none;
-  }
-
-  .difference__header::before {
-    content: none;
+    right: -67px;
+    top: -20px;
+    transform: rotate(357deg);
   }
 
   .difference__content {
@@ -3426,11 +3428,9 @@ fieldset[data-step="final"] {
     padding-bottom: 5px;
   }
 
-  .card {
-    flex-shrink: 0;
-    width: 100%;
-    max-width: 259px;
-    padding: 16px;
+  .difference__card {
+    width: 300px;
+    padding: 20px;
   }
 
   .card__header-name {
@@ -3896,9 +3896,13 @@ fieldset[data-step="final"] {
     gap: 20px;
   }
 
-  .card {
-    width: 100%;
-    max-width: 375px;
+  .difference__card {
+    width: 300px;
+    padding: 20px;
+  }
+
+  .difference__bg--right {
+    display: none;
   }
 }
 
