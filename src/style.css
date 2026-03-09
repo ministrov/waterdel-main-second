@@ -3836,6 +3836,11 @@ fieldset[data-step="final"] {
   .quiz-form__grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .problems {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
 }
 
 @media screen and (max-width: 680px) {}
@@ -3851,5 +3856,16 @@ fieldset[data-step="final"] {
 
   .header-phone__value {
     display: none;
+  }
+
+  .problems__items {
+    gap: 20px;
+  }
+
+  .problems__item {
+    flex-direction: row;
+    flex-basis: 100%;
+    align-items: flex-start;
+    column-gap: 20px;
   }
 }
