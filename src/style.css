@@ -406,7 +406,7 @@ a:hover {
   bottom: 0;
 }
 
-.hero__bg-img {
+.hero__bg {
   position: absolute;
   z-index: 2;
   right: 0;
@@ -416,6 +416,10 @@ a:hover {
   justify-content: flex-end;
   max-width: 1835px;
   height: 100%;
+}
+
+.hero__bg-img {
+  object-fit: contain;
 }
 
 .hero__content {
@@ -3790,10 +3794,9 @@ fieldset[data-step="final"] {
     align-items: center;
   }
 
-  /* .conditions__item-text {
-    width: 100%;
-    align-items: center;
-  } */
+  .hero__scroll {
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 680px) {}
