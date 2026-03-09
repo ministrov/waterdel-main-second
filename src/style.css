@@ -3841,6 +3841,33 @@ fieldset[data-step="final"] {
     padding-top: 50px;
     padding-bottom: 50px;
   }
+
+  .system {
+    padding-bottom: 0;
+  }
+
+  .system__inner {
+    max-width: 100%;
+  }
+
+  .system__bg-box {
+    position: relative;
+    overflow: hidden;
+    width: 150vw;
+    margin-left: -50vw;
+    object-position: right;
+    max-width: unset;
+  }
+
+  .calc-form {
+    padding: 35px 21px;
+  }
+
+  .calc-form__row {
+    flex-direction: column;
+    align-items: initial;
+    gap: 20px;
+  }
 }
 
 @media screen and (max-width: 680px) {}
