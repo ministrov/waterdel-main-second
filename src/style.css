@@ -3951,8 +3951,11 @@ fieldset[data-step="final"] {
     overflow: hidden;
   }
 
-  .roomtypes__list {
+  .roomtypes__slider {
     overflow: visible;
+  }
+
+  .roomtypes__list {
     margin-bottom: 30px;
   }
 
@@ -4060,6 +4063,11 @@ fieldset[data-step="final"] {
     aspect-ratio: 362 / 172;
     object-position: center top;
     object-fit: cover;
+  }
+
+  .mini-form__container {
+    flex-direction: column;
+    gap: 45px;
   }
 }
 
@@ -4194,5 +4202,28 @@ fieldset[data-step="final"] {
   .stats {
     grid-template-columns: 1fr;
     grid-gap: 16px;
+  }
+
+  .footer__contacts {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__socials.socials {
+    display: flex;
+  }
+
+  .footer__socials.socials .socials__slogan {
+    display: none;
+  }
+
+  .socials.socials--second {
+    display: none;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }

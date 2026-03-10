@@ -10,6 +10,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Onest:wght@100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
   <link rel="stylesheet" href="src/style.css">
   <title>waterdel-main-second</title>
 </head>
@@ -231,86 +232,88 @@
             воды</span> для
           любых
           помещений</h2>
-        <ul class="roomtypes__list">
-          <li class="roomtypes__item">
-            <div class="roomtypes__item-top">
-              <img src="image/roomtypes-img-1.jpg" alt="Картинка карточки номер 1">
-            </div>
-            <div class="roomtypes__item-bottom">
-              <h3 class="roomtypes__item-title">Квартира</h3>
-              <ul class="roomtypes__bottom-list bottom-list">
-                <li class="bottom-list__item">
-                  <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                    alt="Иконка галочки в квадратном светло-голубом фоне">
-                  <p class="bottom-list__item-text">Компактные системы под мойку</p>
-                </li>
-                <li class="bottom-list__item">
-                  <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                    alt="Иконка галочки в квадратном светло-голубом фоне">
-                  <p class="bottom-list__item-text">Не занимают место на кухне</p>
-                </li>
-                <li class="bottom-list__item">
-                  <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                    alt="Иконка галочки в квадратном светло-голубом фоне">
-                  <p class="bottom-list__item-text">Установка за 1,5-2 часа</p>
-                </li>
-              </ul>
-              <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
-            </div>
-          </li>
-          <li class="roomtypes__item">
-            <div class="roomtypes__item-top">
-              <img src="image/roomtypes-img-2.jpg" width="453" height="275" alt="Картинка карточки номер 2">
-            </div>
-            <div class="roomtypes__item-bottom">
-              <h3 class="roomtypes__item-title">Частный дом</h3>
-              <ul class="roomtypes__bottom-list bottom-list">
-                <li class="bottom-list__item">
-                  <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                    alt="Иконка галочки в квадратном светло-голубом фоне">
-                  <p class="bottom-list__item-text">Решения для скважины и колодца</p>
-                </li>
-                <li class="bottom-list__item">
-                  <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                    alt="Иконка галочки в квадратном светло-голубом фоне">
-                  <p class="bottom-list__item-text">Удаление железа и жёсткости</p>
-                </li>
-                <li class="bottom-list__item">
-                  <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                    alt="Иконка галочки в квадратном светло-голубом фоне">
-                  <p class="bottom-list__item-text">Производительность до 1000 л/сутки</p>
-                </li>
-              </ul>
-              <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
-            </div>
-          </li>
-          <li class="roomtypes__item">
-            <div class="roomtypes__item-top">
-              <img src="image/roomtypes-img-3.jpg" width="453" height="275" alt="Картинка карточки номер 3">
-            </div>
-            <div class="roomtypes__item-bottom">
-              <h3 class="roomtypes__item-title">Офис / кафе</h3>
-              <ul class="roomtypes__bottom-list bottom-list">
-                <li class="bottom-list__item">
-                  <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                    alt="Иконка галочки в квадратном светло-голубом фоне">
-                  <p class="bottom-list__item-text">Высокая производительность</p>
-                </li>
-                <li class="bottom-list__item">
-                  <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                    alt="Иконка галочки в квадратном светло-голубом фоне">
-                  <p class="bottom-list__item-text">Обслуживание по договору</p>
-                </li>
-                <li class="bottom-list__item">
-                  <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
-                    alt="Иконка галочки в квадратном светло-голубом фоне">
-                  <p class="bottom-list__item-text">Экономия на кулерах</p>
-                </li>
-              </ul>
-              <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
-            </div>
-          </li>
-        </ul>
+        <div class="roomtypes__slider swiper">
+          <ul class="roomtypes__list swiper-wrapper">
+            <li class="roomtypes__item swiper-slide">
+              <div class="roomtypes__item-top">
+                <img src="image/roomtypes-img-1.jpg" alt="Картинка карточки номер 1">
+              </div>
+              <div class="roomtypes__item-bottom">
+                <h3 class="roomtypes__item-title">Квартира</h3>
+                <ul class="roomtypes__bottom-list bottom-list">
+                  <li class="bottom-list__item">
+                    <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                      alt="Иконка галочки в квадратном светло-голубом фоне">
+                    <p class="bottom-list__item-text">Компактные системы под мойку</p>
+                  </li>
+                  <li class="bottom-list__item">
+                    <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                      alt="Иконка галочки в квадратном светло-голубом фоне">
+                    <p class="bottom-list__item-text">Не занимают место на кухне</p>
+                  </li>
+                  <li class="bottom-list__item">
+                    <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                      alt="Иконка галочки в квадратном светло-голубом фоне">
+                    <p class="bottom-list__item-text">Установка за 1,5-2 часа</p>
+                  </li>
+                </ul>
+                <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+              </div>
+            </li>
+            <li class="roomtypes__item swiper-slide">
+              <div class="roomtypes__item-top">
+                <img src="image/roomtypes-img-2.jpg" width="453" height="275" alt="Картинка карточки номер 2">
+              </div>
+              <div class="roomtypes__item-bottom">
+                <h3 class="roomtypes__item-title">Частный дом</h3>
+                <ul class="roomtypes__bottom-list bottom-list">
+                  <li class="bottom-list__item">
+                    <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                      alt="Иконка галочки в квадратном светло-голубом фоне">
+                    <p class="bottom-list__item-text">Решения для скважины и колодца</p>
+                  </li>
+                  <li class="bottom-list__item">
+                    <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                      alt="Иконка галочки в квадратном светло-голубом фоне">
+                    <p class="bottom-list__item-text">Удаление железа и жёсткости</p>
+                  </li>
+                  <li class="bottom-list__item">
+                    <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                      alt="Иконка галочки в квадратном светло-голубом фоне">
+                    <p class="bottom-list__item-text">Производительность до 1000 л/сутки</p>
+                  </li>
+                </ul>
+                <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+              </div>
+            </li>
+            <li class="roomtypes__item swiper-slide">
+              <div class="roomtypes__item-top">
+                <img src="image/roomtypes-img-3.jpg" width="453" height="275" alt="Картинка карточки номер 3">
+              </div>
+              <div class="roomtypes__item-bottom">
+                <h3 class="roomtypes__item-title">Офис / кафе</h3>
+                <ul class="roomtypes__bottom-list bottom-list">
+                  <li class="bottom-list__item">
+                    <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                      alt="Иконка галочки в квадратном светло-голубом фоне">
+                    <p class="bottom-list__item-text">Высокая производительность</p>
+                  </li>
+                  <li class="bottom-list__item">
+                    <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                      alt="Иконка галочки в квадратном светло-голубом фоне">
+                    <p class="bottom-list__item-text">Обслуживание по договору</p>
+                  </li>
+                  <li class="bottom-list__item">
+                    <img class="bottom-list__item-icon" src="icons/round-tick.svg" width="20" height="20"
+                      alt="Иконка галочки в квадратном светло-голубом фоне">
+                    <p class="bottom-list__item-text">Экономия на кулерах</p>
+                  </li>
+                </ul>
+                <button class="roomtypes__btn button button--secondary">Рассчитать стоимость</button>
+              </div>
+            </li>
+          </ul>
+        </div>
 
         <div class="roomtypes__purification-nav purification-nav">
           <div class="purification-nav__arrow prev">
