@@ -972,7 +972,7 @@ fieldset[data-step="final"] {
 }
 
 .quiz-form__box>input[type="checkbox"]~.quiz-form__cart .quiz-form__check::before {
-  background-image: url("../icons/quiz-form-tick.svg");
+  background-image: url("../icons/tick-2.svg");
 }
 
 .quiz-form__box>input:checked~.quiz-form__cart .quiz-form__check::before {
@@ -2000,8 +2000,7 @@ fieldset[data-step="final"] {
   content: '';
   width: 14px;
   height: 14px;
-  background-color: rebeccapurple;
-  /* background-image: url(../icons/check.svg); */
+  background-image: url("../icons/tick-2.svg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   opacity: 0;
