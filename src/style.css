@@ -2385,7 +2385,23 @@ fieldset[data-step="final"] {
 }
 
 .mini-form__container {
+  position: relative;
   display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.mini-form .mini-form__content {
+  width: calc(100% - 388px);
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.mini-form__content {
+  flex-shrink: 0;
+  width: 60%;
+  padding: 90px 0 60px;
+  z-index: 1;
 }
 
 .mini-form__content-row {
@@ -2441,12 +2457,11 @@ fieldset[data-step="final"] {
 
 .fancy-form {
   flex-shrink: 0;
-  border-radius: 27px;
+  padding: 7px 25px 25px;
+  backdrop-filter: blur(14.5px);
   background: linear-gradient(116deg, rgba(73, 33, 127, 0.59) -0.98%, rgba(33, 37, 126, 0.59) 95.36%);
   box-shadow: 109px 206px 65px 0 rgba(0, 0, 0, 0.00), 70px 132px 60px 0 rgba(0, 0, 0, 0.01), 39px 74px 50px 0 rgba(0, 0, 0, 0.03), 17px 33px 37px 0 rgba(0, 0, 0, 0.04), 4px 8px 20px 0 rgba(0, 0, 0, 0.05);
-  backdrop-filter: blur(14.5px);
-  padding: 50px 25px 25px;
-  position: relative;
+  border-radius: 27px;
 }
 
 .fancy-form__legend {
@@ -2500,7 +2515,7 @@ fieldset[data-step="final"] {
 }
 
 .fancy-form__promo-count {
-  top: -79px;
+  top: -34px;
   left: 50%;
   width: 191px;
   transform: translateX(-50%);
@@ -3898,6 +3913,10 @@ fieldset[data-step="final"] {
     padding-top: 0;
   }
 
+  .mini-form__br {
+    display: none;
+  }
+
   .mini-form__list {
     align-self: flex-start;
     gap: 18px;
@@ -3906,6 +3925,7 @@ fieldset[data-step="final"] {
   }
 
   .fancy-form__promo-count {
+    top: -22px;
     max-width: 175px;
   }
 
@@ -3913,11 +3933,10 @@ fieldset[data-step="final"] {
     gap: 20px;
   }
 
-
-  .fancy-form__field {
-    width: 100%;
-    padding: 17px 20px;
-  }
+  /* .fancy-form__button {
+    font-size: 16px;
+    padding: 21px 20px;
+  } */
 
   .contacts {
     padding-top: 50px;
@@ -4130,6 +4149,15 @@ fieldset[data-step="final"] {
     gap: 45px;
   }
 
+  .mini-form__fancy-form {
+    width: 100%;
+  }
+
+  .mini-form .mini-form__content {
+    width: 100%;
+    max-width: 100%;
+  }
+
   .contacts__list {
     grid-gap: 16px;
     margin-top: 24px;
@@ -4276,6 +4304,10 @@ fieldset[data-step="final"] {
   .mini-form__form {
     width: 100%;
     margin-top: 0;
+  }
+
+  .mini-form__container {
+    gap: 80px;
   }
 
   .contacts__list {
