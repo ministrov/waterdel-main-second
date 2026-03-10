@@ -2839,6 +2839,10 @@ fieldset[data-step="final"] {
   .difference__title {
     font-size: 34px;
   }
+
+  .deal__button {
+    width: calc(50% - 7.5px);
+  }
 }
 
 @media screen and (max-width: 1248px) {
@@ -3583,7 +3587,7 @@ fieldset[data-step="final"] {
     top: auto;
     bottom: -45px;
     right: 0;
-    width: 119%;
+    width: 141%;
     max-height: 392px;
   }
 
@@ -3599,14 +3603,24 @@ fieldset[data-step="final"] {
     line-height: 1.65;
   }
 
+  .deal__form {
+    max-width: 314px;
+  }
+
   .deal__fields {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-wrap: wrap;
+  }
+
+  .deal__field {
+    padding: 13px 20px;
+  }
+
+  .deal__input::placeholder {
+    font-size: 13px;
   }
 
   .deal__button {
-    max-width: 314px;
+    width: 100%;
     padding-top: 12px;
     padding-bottom: 12px;
   }
@@ -4004,6 +4018,44 @@ fieldset[data-step="final"] {
 
   .difference__bg--right {
     display: none;
+  }
+
+  .deal__container {
+    flex-direction: column;
+  }
+
+  .deal__bubble {
+    /* top: unset;
+    bottom: 253px;
+    right: -115px;
+    transform: rotate(365deg); */
+    display: none;
+  }
+
+  .deal__content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .deal__form {
+    max-width: 100%;
+  }
+
+  .deal__image {
+    position: static;
+  }
+
+  .deal__image-bg {
+    position: static;
+    width: auto;
+    height: auto;
+    max-width: none;
+    max-height: none;
+    margin: 0 -12px;
+    width: calc(100% + 24px);
+    aspect-ratio: 362 / 172;
+    object-position: center top;
+    object-fit: cover;
   }
 }
 
