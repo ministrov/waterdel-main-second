@@ -2329,6 +2329,10 @@ fieldset[data-step="final"] {
   color: #54585C;
 }
 
+.faq__question-top.open+.faq__question-answer {
+  display: block;
+}
+
 /* Mini-form */
 
 .mini-form {
