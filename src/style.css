@@ -2436,11 +2436,13 @@ fieldset[data-step="final"] {
 .mini-form__form {
   position: relative;
   width: 368px;
-  flex-shrink: 0;
   margin-top: -24px;
 }
 
 .fancy-form {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
   padding: 50px 25px 25px;
   backdrop-filter: blur(14.5px);
   border-radius: 27px;
@@ -2457,15 +2459,6 @@ fieldset[data-step="final"] {
   line-height: 120%;
   text-transform: uppercase;
   color: var(--basic-white);
-}
-
-.fancy-form__fieldset {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
-  margin: 0;
-  padding: 0;
-  border: none;
 }
 
 .fancy-form__field {
@@ -2498,10 +2491,15 @@ fieldset[data-step="final"] {
 }
 
 .fancy-form__promo-count {
-  top: -135px;
+  top: -79px;
   left: 50%;
   width: 191px;
   transform: translateX(-50%);
+}
+
+.fancy-form__button {
+  width: 100%;
+  padding: 21px 32px;
 }
 
 /* Contacts */
@@ -3855,10 +3853,6 @@ fieldset[data-step="final"] {
     padding: 17px 20px;
   }
 
-  .fancy-form__button {
-    width: 100%;
-  }
-
   .contacts {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -4069,6 +4063,11 @@ fieldset[data-step="final"] {
     flex-direction: column;
     gap: 45px;
   }
+
+  .contacts__list {
+    grid-gap: 16px;
+    margin-top: 24px;
+  }
 }
 
 @media screen and (max-width: 680px) {}
@@ -4084,6 +4083,10 @@ fieldset[data-step="final"] {
 
   .header-phone__value {
     display: none;
+  }
+
+  .quiz-form__grid {
+    grid-template-columns: 1fr;
   }
 
   .problems__items {
@@ -4202,6 +4205,15 @@ fieldset[data-step="final"] {
   .stats {
     grid-template-columns: 1fr;
     grid-gap: 16px;
+  }
+
+  .mini-form__form {
+    width: 100%;
+    margin-top: 0;
+  }
+
+  .contacts__list {
+    grid-template-columns: 1fr;
   }
 
   .footer__contacts {
