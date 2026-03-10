@@ -1879,6 +1879,45 @@ fieldset[data-step="final"] {
   color: var(--title-text-500);
 }
 
+.deal__fields {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 15px;
+}
+
+.deal__field {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 21px 20px;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--basic-white);
+  border-radius: 100vmax;
+  transition: all var(--transition-value);
+}
+
+.deal__field.deal__field--tel {
+  flex-grow: 1;
+}
+
+.deal__input {
+  flex-grow: 1;
+  max-width: none;
+  font-family: var(--ff-main);
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.deal__input::placeholder {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--basic-white);
+  opacity: 0.43;
+}
+
 .deal__image {
   position: relative;
   flex-grow: 1;
@@ -1908,6 +1947,69 @@ fieldset[data-step="final"] {
   max-width: none;
   max-height: none;
   object-fit: contain;
+}
+
+.deal__button {
+  padding: 21px 32px;
+  font-size: 16px;
+}
+
+.deal__consent {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #92AFCA;
+}
+
+.deal__checkbox-wrap {
+  cursor: pointer;
+}
+
+.deal__checkbox-wrap .deal__checkbox:checked+.deal__checkbox-indicator {
+  background-color: var(--accent-green);
+  border-color: var(--accent-green);
+}
+
+.deal__checkbox-wrap .deal__checkbox:checked+.deal__checkbox-indicator::before {
+  opacity: 1;
+}
+
+.deal__checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.deal__checkbox-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--white-400);
+  background-color: var(--basic-white);
+  transition: all var(--transition-value);
+}
+
+.deal__checkbox-indicator::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-color: rebeccapurple;
+  /* background-image: url(../icons/check.svg); */
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: all var(--transition-value);
+}
+
+.deal__consent-text a {
+  color: #92AFCA;
 }
 
 /* Installations */
