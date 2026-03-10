@@ -4171,4 +4171,14 @@ fieldset[data-step="final"] {
   .request__btn {
     width: 100%
   }
+
+  .installations__list {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+
+  .installations__bottom {
+    padding-left: 13px;
+    padding-right: 13px;
+  }
 }
