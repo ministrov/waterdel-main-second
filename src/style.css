@@ -3952,6 +3952,44 @@ fieldset[data-step="final"] {
   .contacts__list {
     margin-top: 20px;
   }
+
+  .success__inner {
+    max-width: 550px;
+  }
+
+  .success__border {
+    max-width: 550px;
+    padding: 4px;
+    border-radius: 17px;
+  }
+
+  .success__modal.modal {
+    padding: 16px;
+    text-align: center;
+    border-radius: 17px;
+  }
+
+  .success__btn-wrap {
+    max-width: 208px;
+    padding: 4px;
+  }
+
+  .modal__close {
+    width: 15px;
+    height: 15px;
+    background: none;
+    right: 10px;
+    top: 10px;
+  }
+
+  .modal__title {
+    font-size: 19px;
+  }
+
+  .modal__subtitle {
+    max-width: 320px;
+    font-size: 15px;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
@@ -4326,6 +4364,10 @@ fieldset[data-step="final"] {
 
   .contacts__list {
     grid-template-columns: 1fr;
+  }
+
+  .success__btn-wrap {
+    max-width: 100%;
   }
 
   .footer__contacts {
