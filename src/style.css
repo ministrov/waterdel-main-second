@@ -4181,4 +4181,14 @@ fieldset[data-step="final"] {
     padding-left: 13px;
     padding-right: 13px;
   }
+
+  .team__slider {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
+
+  .stats {
+    grid-template-columns: 1fr;
+    grid-gap: 16px;
+  }
 }
