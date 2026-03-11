@@ -2890,11 +2890,64 @@ fieldset[data-step="final"] {
   width: 100%;
 }
 
+.form__box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.form__label-wrapper {
+  display: flex;
+  gap: 20px;
+  flex-grow: 1;
+}
+
+.modal__form .form__label-field {
+  flex: 1 1 calc((100% - 20px) / 2);
+}
+
+.form__label-field {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 10px;
+  padding: 21px 20px;
+  border-radius: 100vmax;
+  border: 1px solid rgba(255, 255, 255, 0.13);
+  background-color: rgba(255, 255, 255, 0.03);
+  color: var(--basic-white);
+  transition: all var(--transition-value);
+}
+
+.form__input {
+  flex-grow: 1;
+  max-width: none;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+  outline: none;
+}
+
+.form__input::placeholder {
+  font-weight: 500;
+  font-size: 13px;
+  font-family: var(--ff-main);
+  color: var(--basic-white);
+  opacity: 0.43;
+}
+
+.form__input:focus-within {
+  color: var(--basic-white);
+}
+
+.form__label-field:focus-within {
+  border-color: var(--basic-white);
+}
+
 .popup__modal.modal {
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 33px;
+  gap: 10px;
   background: radial-gradient(119.77% 126.3% at 95.67% 0%, #1A6FBE 0%, #0A4B88 100%);
   padding: 85px 35px 35px;
   border-radius: 25px;
@@ -2909,6 +2962,19 @@ fieldset[data-step="final"] {
 
 .popup .modal__title {
   padding-right: 190px;
+}
+
+.modal__form-btn-wrapper {
+  width: 100%;
+  margin: auto;
+  max-width: 330px;
+  padding: 8px;
+  border-radius: 900px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.modal__form-btn {
+  width: 100%;
 }
 
 .modal__sale-price {
