@@ -83,4 +83,18 @@ jQuery(document).ready(function ($) {
   });
 
   // faq
+
+  $('.faq__question-top').on('click', function () {
+    var $this = $(this);
+    console.log($this);
+    var isActive = $this.hasClass('open');
+
+    $('.faq__question-top').removeClass('open');
+    $('.faq__question-answer').slideUp(300);
+
+    if (!isActive) {
+      $this.addClass('open');
+      $this.next().slideDown(300);
+    }
+  });
 });
