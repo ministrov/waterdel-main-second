@@ -4575,4 +4575,25 @@ fieldset[data-step="final"] {
     align-items: center;
     text-align: center;
   }
+
+  .popup__modal.modal {
+    padding-top: 92px;
+    gap: 15px;
+  }
+
+  .popup .modal__title {
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 0px;
+    padding: 0;
+  }
+
+  .form__label-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .sale-price {
+    margin: 0;
+  }
 }
