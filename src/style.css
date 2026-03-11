@@ -241,6 +241,63 @@ a:hover {
   stroke: white;
 }
 
+.acceptance {
+  display: inline-flex;
+  align-items: center;
+  /* margin-top: 20px; */
+  gap: 10px;
+  font-size: 13px;
+  cursor: pointer;
+  color: #92AFCA;
+}
+
+.acceptance__checkbox-wrap {
+  cursor: pointer;
+}
+
+.acceptance__checkbox-wrap .acceptance__checkbox:checked+.acceptance__checkbox-indicator {
+  background-color: var(--accent-green);
+  border-color: var(--accent-green);
+}
+
+.acceptance__checkbox-wrap .acceptance__checkbox:checked+.acceptance__checkbox-indicator::before {
+  opacity: 1;
+}
+
+.acceptance__checkbox {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.acceptance__checkbox-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  border: 1px solid var(--white-400);
+  background-color: var(--basic-white);
+  transition: all var(--transition-value);
+}
+
+.acceptance__checkbox-indicator::before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-image: url("../icons/tick-2.svg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: all var(--transition-value);
+}
+
+.acceptance__consent-text a {
+  color: #92AFCA;
+}
+
 /* Header */
 
 .header {
@@ -4159,6 +4216,10 @@ fieldset[data-step="final"] {
   .form__box {
     row-gap: 15px;
     column-gap: 10px;
+  }
+
+  .form__acceptence {
+    margin-top: 20px;
   }
 
   .form__label-field {
