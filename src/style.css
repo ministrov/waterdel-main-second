@@ -4132,6 +4132,47 @@ fieldset[data-step="final"] {
     max-width: 320px;
     font-size: 15px;
   }
+
+  .popup__inner {
+    max-width: 550px;
+  }
+
+  .popup__border {
+    padding: 4px;
+    border-radius: 17px;
+  }
+
+  .popup__modal.modal {
+    padding: 70px 16px 16px 16px;
+    padding-top: 35px;
+    border-radius: 14px;
+  }
+
+  .popup .modal__title {
+    padding-right: 226px;
+  }
+
+  .sale-price__slogan {
+    font-size: 13px;
+  }
+
+  .form__box {
+    row-gap: 15px;
+    column-gap: 10px;
+  }
+
+  .form__label-field {
+    padding: 17px 20px;
+  }
+
+  .modal__form-btn-wrapper {
+    max-width: 100%;
+    padding: 4px;
+  }
+
+  .modal__form-btn {
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 681px) and (max-width: 767px) {}
