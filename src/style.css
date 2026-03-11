@@ -262,7 +262,7 @@ a:hover {
   position: fixed;
   top: 0;
   left: 0;
-  width: 72%;
+  width: 320px;
   height: 100%;
   transform: translateX(-100%);
   pointer-events: none;
@@ -408,7 +408,7 @@ a:hover {
   align-items: center;
   column-gap: 7px;
   text-decoration: none;
-  color: white;
+  color: var(--basic-white);
 }
 
 .link-tool {
