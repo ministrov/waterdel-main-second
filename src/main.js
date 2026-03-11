@@ -40,6 +40,8 @@ jQuery(document).ready(function ($) {
 
     const scrollbarWidth = getScrollBarWidth();
 
+    console.log(scrollbarWidth);
+
     document.body.style.overflow = 'hidden';
     document.body.style.marginRight = `${scrollbarWidth}px`;
   };
@@ -73,4 +75,12 @@ jQuery(document).ready(function ($) {
       closePopup();
     }
   });
+
+  $(document).on('keydown', function (e) {
+    if (e.key === 'Escape') {
+      closePopup();
+    }
+  });
+
+  // faq
 });
