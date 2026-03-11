@@ -1,3 +1,3 @@
-import { one } from './counter';
+const question = 'question';
 
-console.log(one);
+console.log(question);
