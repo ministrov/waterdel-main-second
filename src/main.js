@@ -65,4 +65,12 @@ jQuery(document).ready(function ($) {
   $('.modal__close').on('click', function () {
     closePopup();
   });
+
+  // Close popup when clicking outside (on popup-inner)
+
+  $('.popup').on('click', function (e) {
+    if (e.target === this) {
+      closePopup();
+    }
+  });
 });
