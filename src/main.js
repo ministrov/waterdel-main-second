@@ -27,7 +27,6 @@ jQuery(document).ready(function ($) {
       !$(e.target).closest('.header__mobile-menu, #mobile-menu-burger').length
     ) {
       closeMobileMenu();
-      // console.log('click!!!!');
     }
   });
 
@@ -60,7 +59,6 @@ jQuery(document).ready(function ($) {
   $('[data-modal]').on('click', function (e) {
     e.preventDefault();
     var modalId = $(this).data('modal');
-    console.log(modalId);
     openPopup(modalId);
   });
 
@@ -86,7 +84,6 @@ jQuery(document).ready(function ($) {
 
   $('.faq__question-top').on('click', function () {
     var $this = $(this);
-    console.log($this);
     var isActive = $this.hasClass('open');
 
     $('.faq__question-top').removeClass('open');
@@ -96,5 +93,17 @@ jQuery(document).ready(function ($) {
       $this.addClass('open');
       $this.next().slideDown(300);
     }
+  });
+
+  // Progress bar realisation
+
+  const $progressBar = $('.progressbar');
+  const windowHeight = $(document).height() - $(window).height();
+
+  $(window).on('scroll', function () {
+    const windowScroll = $(window).scrollTop();
+    const progressBarWidth = (windowScroll / windowHeight).toFixed(2);
+
+    $progressBar.css('transform', `scaleX(${progressBarWidth})`);
   });
 });
