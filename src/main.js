@@ -27,7 +27,42 @@ jQuery(document).ready(function ($) {
       !$(e.target).closest('.header__mobile-menu, #mobile-menu-burger').length
     ) {
       closeMobileMenu();
-      console.log('click!!!!');
+      // console.log('click!!!!');
     }
+  });
+
+  function getScrollBarWidth() {
+    return window.innerWidth - document.documentElement.clientWidth;
+  }
+
+  window.openPopup = function (popupId) {
+    $('#' + popupId).addClass('open');
+
+    const scrollbarWidth = getScrollBarWidth();
+
+    document.body.style.overflow = 'hidden';
+    document.body.style.marginRight = `${scrollbarWidth}px`;
+  };
+
+  window.closePopup = function () {
+    $('.popup').removeClass('open');
+
+    $('body').removeClass('popup-open');
+
+    setTimeout(function () {
+      document.body.style.overflow = '';
+      document.body.style.marginRight = '';
+    }, 300);
+  };
+
+  $('[data-modal]').on('click', function (e) {
+    e.preventDefault();
+    var modalId = $(this).data('modal');
+    console.log(modalId);
+    openPopup(modalId);
+  });
+
+  $('.modal__close').on('click', function () {
+    closePopup();
   });
 });
