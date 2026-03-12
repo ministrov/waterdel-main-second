@@ -1,4 +1,8 @@
 jQuery(document).ready(function ($) {
+  AOS.init({
+    duration: 500,
+    easing: 'ease',
+  });
   // Mobile menu toggle
   $('#mobile-menu-burger').on('click', function () {
     $(this).toggleClass('active');

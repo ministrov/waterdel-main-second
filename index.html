@@ -10,6 +10,8 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Geologica:wght,CRSV@100..900,0&family=Onest:wght@100..900&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="src/style.css">
   <title>waterdel-main-second</title>
@@ -142,7 +144,7 @@
     <section id="block-hero" class="page__hero hero">
       <img class="hero__bubbles" src="image/hero-bubbles.png" width="564" height="564" alt="">
 
-      <div class="hero__bg">
+      <div class="hero__bg" data-aos="fade-in" data-aos-delay="1500">
         <picture>
           <source media="(max-width: 768px)" srcset="image/hero-banner-mobile.png">
           <source media="(max-width: 1648px)" srcset="image/hero-banner-tablet.png">
@@ -153,16 +155,18 @@
 
       <div class="container hero__content-wrapper">
         <div class="hero__content">
-          <h2 class="hero__title">Установим <br class="hero__br-one"> систему очистки <br class="hero__br-second"> воды
+          <h2 class="hero__title" data-aos="fade-right" data-aos-delay="200">Установим <br class="hero__br-one"> систему
+            очистки <br class="hero__br-second"> воды
             <span class="highlighted">за 2 часа</span>
           </h2>
 
-          <p class="hero__text">Расчитайте стоимость установки и получите систему со скидкой 50%</p>
-          <div class="hero__btn-wrapper">
+          <p class="hero__text" data-aos="fade-right" data-aos-delay="600">Расчитайте стоимость установки и получите
+            систему со скидкой 50%</p>
+          <div class="hero__btn-wrapper" data-aos="fade-up" data-aos-delay="800">
             <button class="hero__button button button--secondary" data-modal="callback">Рассчитать стоимость
               установки</button>
           </div>
-          <div class="hero__conditions conditions">
+          <div class="hero__conditions conditions" data-aos="fade-up" data-aos-delay="1000">
             <p class="conditions__text">Особые условия для:</p>
             <ul class="conditions__list">
               <li class="conditions__item">
@@ -184,7 +188,7 @@
           </div>
         </div>
         <div class="hero__right">
-          <div class="hero__promo promo">
+          <div class="hero__promo promo" data-aos="fade-down" data-aos-delay="1100">
             <div class="promo__promo-count promo-count">
               <svg class="promo-count__icon" xmlns="http://www.w3.org/2000/svg" width="45" height="60" fill="none"
                 viewBox="0 0 45 60">
@@ -229,11 +233,12 @@
 
     <section id="block-roomtypes" class="page__roomtypes roomtypes roomtypes--style-wrap">
       <div class="container">
-        <h2 class="roomtypes__title section-title">Устанавливаем <span class="highlighted--second">системы очистки
+        <h2 class="roomtypes__title section-title" data-aos="fade-up">Устанавливаем <span
+            class="highlighted--second">системы очистки
             воды</span> для
           любых
           помещений</h2>
-        <div class="roomtypes__slider swiper">
+        <div class="roomtypes__slider swiper" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200">
           <ul class="roomtypes__list swiper-wrapper">
             <li class="roomtypes__item swiper-slide">
               <div class="roomtypes__item-top">
@@ -339,7 +344,7 @@
 
     <section id="block-quiz" class="page__quiz quiz">
       <div class="container">
-        <h2 class="quiz__title section-title">
+        <h2 class="quiz__title section-title" data-aos="fade-up">
           Ответьте на 3 <span class="highlighted--second">вопроса</span> и мы подберем идеальное решение и <span
             class="highlighted--second">зафиксируем скидку 50%</span>
         </h2>
@@ -351,7 +356,7 @@
             розетка?</p>
         </div>
 
-        <form class="quiz__form quiz-form">
+        <form class="quiz__form quiz-form" data-aos="fade-up" data-aos-offset="200" data-aos-delay="200">
           <fieldset class="quiz-form__row" data-step="1">
             <div class="quiz-form__left">
               <p class="quiz-form__left-title">Какую проблему с водой вы хотите решить?</p>
@@ -597,25 +602,26 @@
 
     <section id="block-problems" class="page__problems problems">
       <div class="container">
-        <h2 class="problems__title section-title">Низкое <span class="highlighted--second">качество воды</span> влечет
+        <h2 class="problems__title section-title" data-aos="fade-up">Низкое <span class="highlighted--second">качество
+            воды</span> влечет
           за
           собой много
           проблем</h2>
 
         <ul class="problems__items">
-          <li class="problems__item">
+          <li class="problems__item" data-aos="zoom-in" data-aos-delay="300">
             <img class="problems__item-image" src="icons/problems-icon-1.svg" width="60" height="60"
               alt="Иконка сложенного мужского кошелька">
             <p class="problems__item-text">Необходимость тратиться на <br> доставку воды <strong>каждый месяц</strong>
             </p>
           </li>
-          <li class="problems__item">
+          <li class="problems__item" data-aos="zoom-in" data-aos-delay="450">
             <img class="problems__item-image" src="icons/problems-icon-2.svg" width="60" height="60"
               alt="Иконка 19 литровой бутылки воды">
             <p class="problems__item-text">Таскать <strong>тяжелые бутылки</strong> <br> и следить за сроками доставки
             </p>
           </li>
-          <li class="problems__item">
+          <li class="problems__item" data-aos="zoom-in" data-aos-delay="600">
             <img class="problems__item-image" src="icons/problems-icon-3.svg" width="60" height="60"
               alt="Иконка электрического чайника">
             <p class="problems__item-text"><strong>Постоянная накипь</strong> на чайниках и посуде <br> при
@@ -623,7 +629,7 @@
               воды
               из крана</p>
           </li>
-          <li class="problems__item">
+          <li class="problems__item" data-aos="zoom-in" data-aos-delay="750">
             <img class="problems__item-image" src="icons/problems-icon-4.svg" width="60" height="60"
               alt="Иконка чеклиста здоровья">
             <p class="problems__item-text"><strong>Проблемы со здоровьем</strong> у детей и семьи <br> при использовании
@@ -636,32 +642,38 @@
     <section id="block-system" class="page__system system">
       <div class="container">
         <div class="system__inner">
-          <h2 class="system__title section-title">Система <span class="highlighted--second">«АБФ-ОСМО-6»</span> — чистая
+          <h2 class="system__title section-title" data-aos="fade-up">Система <span
+              class="highlighted--second">«АБФ-ОСМО-6»</span> — чистая
             вода из вашего
             крана</h2>
 
           <ul class="system__list">
-            <li class="system__item">
+            <li class="system__item" data-aos="fade-right" data-aos-offset="200" data-aos-delay="300"
+              data-aos-duration="300">
               <img class="system__item-image" src="icons/system-icon-1.svg" width="60" height="60"
                 alt="Иконка бутылки воды">
               <p class="system__item-text">Накопительный бак <strong>12 литров</strong></p>
             </li>
-            <li class="system__item">
+            <li class="system__item" data-aos="fade-right" data-aos-offset="200" data-aos-delay="450"
+              data-aos-duration="450">
               <img class="system__item-image" src="icons/system-icon-2.svg" width="60" height="60" alt="Иконка фильтра">
               <p class="system__item-text"><strong>6 ступеней</strong> очистки</p>
             </li>
-            <li class="system__item">
+            <li class="system__item" data-aos="fade-right" data-aos-offset="200" data-aos-delay="600"
+              data-aos-duration="600">
               <img class="system__item-image" src="icons/system-icon-3.svg" width="60" height="60"
                 alt="Иконка крана для воды">
               <p class="system__item-text"><strong>до 200</strong> литров в сутки</p>
             </li>
-            <li class="system__item">
+            <li class="system__item" data-aos="fade-right" data-aos-offset="200" data-aos-delay="750"
+              data-aos-duration="750">
               <img class="system__item-image" src="icons/system-icon-4.svg" width="60" height="60" alt="Гарантия">
               <p class="system__item-text">Гарантия на оборудование <strong>1 год</strong></p>
             </li>
           </ul>
 
-          <form class="system__calc-form calc-form">
+          <form class="system__calc-form calc-form" data-aos="fade-up" data-aos-offset="200" data-aos-delay="900"
+            data-aos-duration="900">
             <legend class="calc-form__title">Расчитайте стоимость и получите 2 гарантии на монтаж <span
                 class="highlighted">в подарок</span>
             </legend>
@@ -695,7 +707,7 @@
         </div>
       </div>
 
-      <div class="system__bg-box">
+      <div class="system__bg-box" data-aos="fade-in" data-aos-delay="300" data-aos-duration="300">
         <img class="system__bg-img" src="image/system-bg.webp" width="1920" height="777"
           alt="В фокусе водоочистительный прибор для воды">
       </div>
@@ -703,37 +715,37 @@
 
     <section id="block-filter" class="page__filter filter filter--style-wrap">
       <div class="container">
-        <h2 class="filter__title section-title">Как система фильтрует</h2>
+        <h2 class="filter__title section-title" data-aos="fade-up">Как система фильтрует</h2>
 
         <ul class="filter__list">
-          <li class="filter__item">
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="300">
             <span class="filter__num">01.</span>
             <img class="filter__item-image" src="icons/filter-icon-1.svg" width="60" height="60"
               alt="Механическая очистка">
             <p class="filter__item-text"><strong>Механическая очистка</strong> — удаляет песок, ржавчину, осадок</p>
           </li>
-          <li class="filter__item">
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="450">
             <span class="filter__num">02.</span>
             <img class="filter__item-image" src="icons/filter-icon-2.svg" width="60" height="60" alt="Угольный фильтр">
             <p class="filter__item-text"><strong>Угольный фильтр</strong> — убирает хлор и органику</p>
           </li>
-          <li class="filter__item">
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="600">
             <span class="filter__num">03.</span>
             <img class="filter__item-image" src="icons/filter-icon-3.svg" width="60" height="60" alt="Карбон-блок">
             <p class="filter__item-text"><strong>Карбон-блок</strong> — тонкая очистка от примесей</p>
           </li>
-          <li class="filter__item">
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="750">
             <span class="filter__num">04.</span>
             <img class="filter__item-image" src="icons/filter-icon-4.svg" width="60" height="60"
               alt="Мембрана обратного осмоса">
             <p class="filter__item-text"><strong>Мембрана обратного осмоса</strong> — удаляет 99,97% загрязнений</p>
           </li>
-          <li class="filter__item">
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="900">
             <span class="filter__num">05.</span>
             <img class="filter__item-image" src="icons/filter-icon-5.svg" width="60" height="60" alt="Постфильтр">
             <p class="filter__item-text"><strong>Постфильтр</strong> — улучшает вкус воды</p>
           </li>
-          <li class="filter__item">
+          <li class="filter__item" data-aos="fade-in" data-aos-delay="1050">
             <span class="filter__num">06.</span>
             <img class="filter__item-image" src="icons/filter-icon-6.svg" width="60" height="60" alt="Минерализатор">
             <p class="filter__item-text"><strong>Минерализатор</strong> — добавляет полезные минералы</p>
@@ -746,28 +758,29 @@
 
     <section id="block-savings" class="page__savings savings savings--style-wrap">
       <div class="container">
-        <h2 class="savings__title section-title">Экономия до <span class="highlighted--second">180 000 ₽</span> в год на
+        <h2 class="savings__title section-title" data-aos="fade-up">Экономия до <span class="highlighted--second">180
+            000 ₽</span> в год на
           воде</h2>
 
         <ul class="savings__items">
-          <li class="savings__item">
+          <li class="savings__item" data-aos="fade-right" data-aos-delay="300">
             <img class="savings__item-image" src="icons/savings-first-icon-1.svg" width="72" height="72"
               alt="Семья из 4 человек">
             <p class="savings__item-text">Семья из 4 человек потребляет около 10л. питьевой воды в день</p>
           </li>
-          <li class="savings__item">
+          <li class="savings__item" data-aos="fade-right" data-aos-delay="450">
             <img class="savings__item-image" src="icons/savings-first-icon-2.svg" width="72" height="72"
               alt="Бутилированная вода">
             <p class="savings__item-text">Бутилированная вода: </p>
             <span class="savings__item-slogan">10л х 30 дней х 50₽/л = 15 000₽/мес.</span>
           </li>
-          <li class="savings__item">
+          <li class="savings__item" data-aos="fade-right" data-aos-delay="600">
             <img class="savings__item-image" src="icons/savings-first-icon-3.svg" width="72" height="72"
               alt="Система фильтрации">
             <p class="savings__item-text">Система фильтрации:</p>
             <span class="savings__item-slogan">10л х 30 дней х 0,5₽/л = 150₽/мес.</span>
           </li>
-          <li class="savings__item savings__item--final">
+          <li class="savings__item savings__item--final" data-aos="fade-right" data-aos-delay="750">
             <img class="savings__item-image" src="icons/savings-first-icon-4.svg" width="72" height="72"
               alt="Ваша экономия">
             <p class="savings__item-text">Ваша экономия:</p>
@@ -777,7 +790,7 @@
         </ul>
 
         <ul class="savings__list">
-          <li class="savings__list-item">
+          <li class="savings__list-item" data-aos="zoom-in" data-aos-delay="900">
             <img class="savings__list-item-img" src="icons/savings-second-icon-1.svg" width="60" height="60"
               alt="Литр чистой воды">
             <div class="savings__list-text-content">
@@ -785,7 +798,7 @@
               <p class="savings__list-item-text">Литр чистой воды стоит меньше 1 рубля</p>
             </div>
           </li>
-          <li class="savings__list-item">
+          <li class="savings__list-item" data-aos="zoom-in" data-aos-delay="1050">
             <img class="savings__list-item-img" src="icons/savings-second-icon-2.svg" width="60" height="60"
               alt="Всегда стабильное качество">
             <div class="savings__list-text-content">
@@ -793,7 +806,7 @@
               <p class="savings__list-item-text">не зависит от производителя бутылей</p>
             </div>
           </li>
-          <li class="savings__list-item">
+          <li class="savings__list-item" data-aos="zoom-in" data-aos-delay="1200">
             <img class="savings__list-item-img" src="icons/savings-second-icon-3.svg" width="60" height="60"
               alt="Вода всегда под рукой">
             <div class="savings__list-text-content">
@@ -801,7 +814,7 @@
               <p class="savings__list-item-text">Не нужно заказывать, ждать доставку, хранить бутыли</p>
             </div>
           </li>
-          <li class="savings__list-item">
+          <li class="savings__list-item" data-aos="zoom-in" data-aos-delay="1350">
             <img class="savings__list-item-img" src="icons/savings-second-icon-4.svg" width="60" height="60"
               alt="Ноль пластиковых отходов">
             <div class="savings__list-text-content">
@@ -816,36 +829,37 @@
     <section id="block-perfect" class="page__perfect perfect">
       <div class="container">
         <div class="perfect__inner">
-          <h2 class="perfect__title section-title">Эта система <span class="highlighted">идеально подойдёт вам</span>,
+          <h2 class="perfect__title section-title" data-aos="fade-up">Эта система <span class="highlighted">идеально
+              подойдёт вам</span>,
             если вы...</h2>
 
           <ul class="perfect__list">
-            <li class="perfect__item">
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="300">
               <img class="perfect__item-img" src="icons/tick.svg" width="40" height="40"
                 alt="Иконка галочки на светло синем фоне в виде звездочки">
               <p class="perfect__item-text">Цените качество и безопасность воды для всей семьи</p>
             </li>
-            <li class="perfect__item">
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="450">
               <img class="perfect__item-img" src="icons/tick.svg" width="40" height="40"
                 alt="Иконка галочки на светло синем фоне в виде звездочки">
               <p class="perfect__item-text">Живёте в доме / квартире с нестабильным давлением воды</p>
             </li>
-            <li class="perfect__item">
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="600">
               <img class="perfect__item-img" src="icons/tick.svg" width="40" height="40"
                 alt="Иконка галочки на светло синем фоне в виде звездочки">
               <p class="perfect__item-text">Заботитесь о здоровье и предпочитаете воду с минералами</p>
             </li>
-            <li class="perfect__item">
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="750">
               <img class="perfect__item-img" src="icons/tick.svg" width="40" height="40"
                 alt="Иконка галочки на светло синем фоне в виде звездочки">
               <p class="perfect__item-text">Хотите избавиться от накипи, хлора и запаха в воде</p>
             </li>
-            <li class="perfect__item">
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="900">
               <img class="perfect__item-img" src="icons/tick.svg" width="40" height="40"
                 alt="Иконка галочки на светло синем фоне в виде звездочки">
               <p class="perfect__item-text">Устали покупать бутилированную воду и хотите экономить</p>
             </li>
-            <li class="perfect__item">
+            <li class="perfect__item" data-aos="fade-right" data-aos-delay="1050">
               <img class="perfect__item-img" src="icons/tick.svg" width="40" height="40"
                 alt="Иконка галочки на светло синем фоне в виде звездочки">
               <p class="perfect__item-text">Ищете современное и эстетичное решение для кухни</p>
@@ -866,10 +880,12 @@
         alt="В фокусе капли воды">
 
       <div class="container">
-        <h2 class="steps__title section-title">3 простых шага до <span class="highlighted--second">чистой воды</span>
+        <h2 class="steps__title section-title" data-aos="fade-up">3 простых шага до <span
+            class="highlighted--second">чистой воды</span>
         </h2>
 
-        <div class="steps__purification-swiper purification-swiper swiper">
+        <div class="steps__purification-swiper purification-swiper swiper" data-aos="fade-up" data-aos-offset="200"
+          data-aos-delay="200">
           <div class="swiper-wrapper purification-swiper__list">
 
             <div class="swiper-slide purification-swiper__slide">
@@ -964,7 +980,8 @@
     <section id="block-diff" class="page__difference difference">
       <div class="difference__header">
         <div class="container">
-          <h2 class="difference__title section-title">Система <span class="highlighted">«АБФ-ОСМО-6»</span> против
+          <h2 class="difference__title section-title" data-aos="fade-up">Система <span
+              class="highlighted">«АБФ-ОСМО-6»</span> против
             <br class="difference__br">бутилированной
             воды
           </h2>
@@ -977,7 +994,7 @@
       </div>
       <div class="difference__wrapper">
         <div class="difference__content container">
-          <div class="difference__card card card--first">
+          <div class="difference__card card card--first" data-aos="fade-right" data-aos-delay="500">
             <div class="card__header">
               <p class="card__header-name">Система очистки</p>
               <p class="card__header-title">АБФ-ОСМО-6</p>
@@ -1033,7 +1050,7 @@
             </div>
             <button class="difference__btn button button--secondary" data-modal="callback">Оставить заявку</button>
           </div>
-          <div class="difference__card card card--second">
+          <div class="difference__card card card--second" data-aos="fade-right" data-aos-delay="1000">
             <div class="card__header">
               <p class="card__header-name">Доставка</p>
               <p class="card__header-title">Бутилированная вода</p>
@@ -1101,16 +1118,16 @@
 
       <div class="container deal__container">
         <div class="deal__content">
-          <h2 class="deal__title section-title">
+          <h2 class="deal__title section-title" data-aos="fade-up">
             Экономьте в деньгах <br>
             и выигрывайте в <span class="highlighted">здоровье семьи</span>
           </h2>
 
-          <p class="deal__subtitle">
+          <p class="deal__subtitle" data-aos="fade-up">
             Оставьте заявку для расчета стоимости
           </p>
 
-          <form class="deal__form">
+          <form class="deal__form" data-aos="fade-up">
             <div class="deal__fields">
               <label class="deal__field deal__field--tel">
                 <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="none" aria-hidden="true">
@@ -1150,13 +1167,14 @@
 
     <section id="block-installations" class="page__installations installations installations--style-wrap">
       <div class="container installations__container">
-        <h2 class="installations__title section-title">Более <span class="highlighted--second">2 500 установок</span> в
+        <h2 class="installations__title section-title" data-aos="fade-up">Более <span class="highlighted--second">2 500
+            установок</span> в
           Москве и
           области
         </h2>
 
         <ul class="installations__list">
-          <li class="installations__item">
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="300">
             <div class="installations__item-pic">
               <img class="installations__item-img" src="image/installations-image-1.jpg" width="453" height="275"
                 alt="Заявка и консультация">
@@ -1169,7 +1187,7 @@
               <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
             </div>
           </li>
-          <li class="installations__item">
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="450">
             <div class="installations__item-pic">
               <img class="installations__item-img" src="image/installations-image-2.jpg" width="453" height="275"
                 alt="Заявка и консультация">
@@ -1182,7 +1200,7 @@
               <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
             </div>
           </li>
-          <li class="installations__item">
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="600">
             <div class="installations__item-pic">
               <img class="installations__item-img" src="image/installations-image-3.jpg" width="453" height="275"
                 alt="Заявка и консультация">
@@ -1195,7 +1213,7 @@
               <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
             </div>
           </li>
-          <li class="installations__item">
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="750">
             <div class="installations__item-pic">
               <img class="installations__item-img" src="image/installations-image-4.jpg" width="453" height="275"
                 alt="Заявка и консультация">
@@ -1208,7 +1226,7 @@
               <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
             </div>
           </li>
-          <li class="installations__item">
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="900">
             <div class="installations__item-pic">
               <img class="installations__item-img" src="image/installations-image-5.jpg" width="453" height="275"
                 alt="Заявка и консультация">
@@ -1221,7 +1239,7 @@
               <p class="installations__item-text"><strong>Установленная система:</strong> «АБФ-ОСМО-6»</p>
             </div>
           </li>
-          <li class="installations__item">
+          <li class="installations__item" data-aos="zoom-in" data-aos-delay="1050">
             <div class="installations__item-pic">
               <img class="installations__item-img" src="image/installations-image-6.jpg" width="453" height="275"
                 alt="Заявка и консультация">
@@ -1236,16 +1254,18 @@
           </li>
         </ul>
 
-        <button class="installations__btn button button--secondary">Показать еще</button>
+        <button class="installations__btn button button--secondary" data-aos="fade-right" data-aos-delay="1200">Показать
+          еще</button>
       </div>
     </section>
 
     <section id="block-team" class="page__team team">
       <div class="container">
-        <h2 class="team__title section-title">Команда <span class="highlighted--second">Water Delivery</span></h2>
+        <h2 class="team__title section-title" data-aos="fade-up">Команда <span class="highlighted--second">Water
+            Delivery</span></h2>
 
         <div class="team__row">
-          <div class="team__lead">
+          <div class="team__lead" data-aos="fade-right" data-aos-delay="300">
             <article class="team__card team__card--lead">
               <h3 class="visually-hidden">Карточка номер Лидера команды</h3>
               <figure class="team__photo-wrap">
@@ -1266,7 +1286,7 @@
           </div>
 
           <div class="team__slider">
-            <article class="team__card team__card--owner">
+            <article class="team__card team__card--owner" data-aos="zoom-in" data-aos-delay="300">
               <h3 class="visually-hidden">Карточка номер 0</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="image/team-image-owner.jpg" width="276" height="300" alt="Петров Иван">
@@ -1276,7 +1296,7 @@
                 </figcaption>
               </figure>
             </article>
-            <article class="team__card">
+            <article class="team__card" data-aos="zoom-in" data-aos-delay="450">
               <h3 class="visually-hidden">Карточка номер 1</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="image/team-image-2.jpg" width="276" height="300" alt="Сергей Иванов">
@@ -1287,7 +1307,7 @@
               </figure>
             </article>
 
-            <article class="team__card">
+            <article class="team__card" data-aos="zoom-in" data-aos-delay="600">
               <h3 class="visually-hidden">Карточка номер 2</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="image/team-image-3.jpg" width="276" height="300" alt="Иванов Петр">
@@ -1298,7 +1318,7 @@
               </figure>
             </article>
 
-            <article class="team__card">
+            <article class="team__card" data-aos="zoom-in" data-aos-delay="750">
               <h3 class="visually-hidden">Карточка номер 3</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="image/team-image-4.jpg" width="276" height="300" alt="Анна Смирнова">
@@ -1309,7 +1329,7 @@
               </figure>
             </article>
 
-            <article class="team__card">
+            <article class="team__card" data-aos="zoom-in" data-aos-delay="900">
               <h3 class="visually-hidden">Карточка номер 4</h3>
               <figure class="team__photo-wrap">
                 <img class="team__photo" src="image/team-image-5.jpg" width="276" height="300" alt="Дмитрий Козлов">
@@ -1323,7 +1343,7 @@
         </div>
 
         <div class="team__stats stats">
-          <article class="stats__item">
+          <article class="stats__item" data-aos="fade-up" data-aos-delay="300">
             <h3 class="visually-hidden">Опыт</h3>
             <header class="stats__head">
               <p class="stats__label">Опыт</p>
@@ -1337,7 +1357,7 @@
             </p>
           </article>
 
-          <article class="stats__item">
+          <article class="stats__item" data-aos="fade-up" data-aos-delay="450">
             <h3 class="visually-hidden">Установок систем</h3>
             <header class="stats__head">
               <p class="stats__label">Установок систем</p>
@@ -1351,7 +1371,7 @@
             </p>
           </article>
 
-          <article class="stats__item">
+          <article class="stats__item" data-aos="fade-up" data-aos-delay="600">
             <h3 class="visually-hidden">Рейтинг</h3>
             <header class="stats__head">
               <p class="stats__label">Рейтинг</p>
@@ -1373,7 +1393,7 @@
             </p>
           </article>
 
-          <article class="stats__item">
+          <article class="stats__item" data-aos="fade-up" data-aos-delay="750">
             <h3 class="visually-hidden">Гарантия</h3>
             <header class="stats__head">
               <p class="stats__label">Гарантия</p>
@@ -1392,10 +1412,10 @@
 
     <section id="block-faq" class="page__faq faq">
       <div class="container">
-        <h2 class="faq__title section-title">Отвечаем на ваши вопросы</h2>
+        <h2 class="faq__title section-title" data-aos="fade-up">Отвечаем на ваши вопросы</h2>
 
         <ul class="faq__questions">
-          <li class="faq__question">
+          <li class="faq__question" data-aos="fade-left" data-aos-delay="300" data-aos-anchor=".faq">
             <div class="faq__question-top">
               <p class="faq__question-text">Слабый напор воды?</p>
               <img class="faq__question-arrow" src="icons/chevron-down.svg" width="24" height="24"
@@ -1405,7 +1425,7 @@
               Да. Встроенная помпа поддерживает стабильную работу системы даже при слабом напоре воды.
             </div>
           </li>
-          <li class="faq__question">
+          <li class="faq__question" data-aos="fade-left" data-aos-delay="450" data-aos-anchor=".faq">
             <div class="faq__question-top">
               <p class="faq__question-text">Частота замены картриджей?</p>
               <img class="faq__question-arrow" src="icons/chevron-down.svg" width="24" height="24"
@@ -1416,7 +1436,7 @@
               Обратноосмотическая мембрана служит 2–3 года.
             </div>
           </li>
-          <li class="faq__question">
+          <li class="faq__question" data-aos="fade-left" data-aos-delay="600" data-aos-anchor=".faq">
             <div class="faq__question-top">
               <p class="faq__question-text">Гарантия?</p>
               <img class="faq__question-arrow" src="icons/chevron-down.svg" width="24" height="24"
@@ -1426,7 +1446,7 @@
               Гарантия на оборудование — 1 год, на монтажные работы — 2 года.
             </div>
           </li>
-          <li class="faq__question">
+          <li class="faq__question" data-aos="fade-left" data-aos-delay="750" data-aos-anchor=".faq">
             <div class="faq__question-top">
               <p class="faq__question-text">Что входит в стоимость?</p>
               <img class="faq__question-arrow" src="icons/chevron-down.svg" width="24" height="24"
@@ -1450,25 +1470,27 @@
         <div class="mini-form__content">
           <div class="mini-form__content-row">
             <div class="mini-form__text-box">
-              <h2 class="mini-form__title section-title">Готовы пить <span class="highlighted">чистую воду</span> уже
+              <h2 class="mini-form__title section-title" data-aos="fade-up">Готовы пить <span class="highlighted">чистую
+                  воду</span> уже
                 завтра?
               </h2>
-              <p class="mini-form__text">Оставьте заявку — установим систему в любой удобный день для вас</p>
+              <p class="mini-form__text" data-aos="fade-up">Оставьте заявку — установим систему в любой удобный день для
+                вас</p>
             </div>
 
 
             <ul class="mini-form__list">
-              <li class="mini-form__item">
+              <li class="mini-form__item" data-aos="fade-right" data-aos-delay="300">
                 <img class="mini-form__item-img" src="icons/tick.svg" width="40" height="40"
                   alt="Иконка галочки на светло синем фоне в виде звездочки">
                 <p class="mini-form__item-text">Перезвоним вам <br class="mini-form__br"> за 30 секунд</p>
               </li>
-              <li class="mini-form__item">
+              <li class="mini-form__item" data-aos="fade-right" data-aos-delay="450">
                 <img class="mini-form__item-img" src="icons/tick.svg" width="40" height="40"
                   alt="Иконка галочки на светло синем фоне в виде звездочки">
                 <p class="mini-form__item-text">Гарантируем <br class="mini-form__br"> без спама</p>
               </li>
-              <li class="mini-form__item">
+              <li class="mini-form__item" data-aos="fade-right" data-aos-delay="600">
                 <img class="mini-form__item-img" src="icons/tick.svg" width="40" height="40"
                   alt="Иконка галочки на светло синем фоне в виде звездочки">
                 <p class="mini-form__item-text">Гарантия на <br class="mini-form__br"> установку - 2 года</p>
@@ -1477,7 +1499,7 @@
           </div>
         </div>
 
-        <div class="mini-form__fancy-form fancy-form">
+        <div class="mini-form__fancy-form fancy-form" data-aos="fade-up">
           <div class="fancy-form__promo-count promo-count">
             <svg class="promo-count__icon" xmlns="http://www.w3.org/2000/svg" width="45" height="60" fill="none"
               viewBox="0 0 45 60">
@@ -1531,13 +1553,13 @@
       <div class="container">
         <h2 class="visually-hidden">Секция контактов с картой и информацией о компании</h2>
 
-        <div class="contacts__map">
+        <div class="contacts__map" data-aos="zoom-in" data-aos-delay="300">
           <img class="contacts__map-image" src="image/map.jpg" width="1400" height="542"
             alt="В фокусе карта местонахождения компании в Москве">
         </div>
 
         <ul class="contacts__list">
-          <li class="contacts__item">
+          <li class="contacts__item" data-aos="fade-up" data-aos-delay="300">
             <div class="contacts__top">
               <h3 class="contacts__top-title">Телефон</h3>
               <img class="contacts__top-icon" src="icons/contacts-icon-1.svg" width="40" height="40" alt="Телефон">
@@ -1547,7 +1569,7 @@
             </a>
             <p class="contacts__bottom-text">Звоните на наш телефон <br> по любым вопросам</p>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item" data-aos="fade-up" data-aos-delay="450">
             <div class="contacts__top">
               <h3 class="contacts__top-title">Адрес офиса</h3>
               <img class="contacts__top-icon" src="icons/contacts-icon-2.svg" width="40" height="40" alt="Адрес офиса">
@@ -1555,7 +1577,7 @@
             <p class="contacts__bottom-link">г. Москва, ул. Уличная 677, офис №365</p>
             <p class="contacts__bottom-text">Качественно установили <br> системы очистки воды</p>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item" data-aos="fade-up" data-aos-delay="600">
             <div class="contacts__top">
               <h3 class="contacts__top-title">Email</h3>
               <img class="contacts__top-icon" src="icons/contacts-icon-3.svg" width="40" height="40" alt="Email">
@@ -1565,7 +1587,7 @@
             </a>
             <p class="contacts__bottom-text">Пишите на наш email адрес <br> по любым вопросам</p>
           </li>
-          <li class="contacts__item">
+          <li class="contacts__item" data-aos="fade-up" data-aos-delay="750">
             <div class="contacts__top">
               <h3 class="contacts__top-title">Режим работы</h3>
               <img class="contacts__top-icon" src="icons/contacts-icon-4.svg" width="40" height="40" alt="Режим работы">
@@ -1802,6 +1824,7 @@
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"
     integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="module" src="/src/main.js"></script>
 </body>
 
