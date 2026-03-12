@@ -1375,7 +1375,18 @@ fieldset[data-step="final"] {
   z-index: 1;
 }
 
-.savings__item:not(:last-child)::after {
+.savings__item-img {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: -18px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* .savings__item:not(:last-child)::after {
   content: "";
   position: absolute;
   z-index: 3;
@@ -1383,9 +1394,9 @@ fieldset[data-step="final"] {
   right: -18px;
   width: 40px;
   height: 40px;
-  background-image: url('../icons/saving-icon.svg');
+  background-image: url('../');
   transform: translateY(-50%);
-}
+} */
 
 .savings__item:first-child {
   border-radius: 15px 0 0 15px;
