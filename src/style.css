@@ -961,6 +961,13 @@ fieldset[data-step="final"] {
   font-size: 16px;
 }
 
+.quiz-form__title {
+  font-family: var(--ff-headers);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
 .quiz-form__right {
   flex-grow: 1;
   padding: 35px;
