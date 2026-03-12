@@ -887,7 +887,7 @@ a:hover {
 fieldset[data-step="2"],
 fieldset[data-step="3"],
 fieldset[data-step="final"] {
-  display: none;
+  display: flex;
 }
 
 .quiz-form__left {
@@ -959,6 +959,13 @@ fieldset[data-step="final"] {
 .quiz-form__left-btn {
   padding: 21px 30px;
   font-size: 16px;
+}
+
+.quiz-form__title {
+  font-family: var(--ff-headers);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 .quiz-form__right {
@@ -1375,7 +1382,18 @@ fieldset[data-step="final"] {
   z-index: 1;
 }
 
-.savings__item:not(:last-child)::after {
+.savings__item-img {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: -18px;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/* .savings__item:not(:last-child)::after {
   content: "";
   position: absolute;
   z-index: 3;
@@ -1383,9 +1401,9 @@ fieldset[data-step="final"] {
   right: -18px;
   width: 40px;
   height: 40px;
-  background-image: url('../icons/saving-icon.svg');
+  background-image: url('../');
   transform: translateY(-50%);
-}
+} */
 
 .savings__item:first-child {
   border-radius: 15px 0 0 15px;

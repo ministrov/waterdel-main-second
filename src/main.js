@@ -1,7 +1,7 @@
 jQuery(document).ready(function ($) {
   AOS.init({
     duration: 500,
-    easing: 'ease',
+    easing: 'ease-in-out',
   });
   // Mobile menu toggle
   $('#mobile-menu-burger').on('click', function () {
