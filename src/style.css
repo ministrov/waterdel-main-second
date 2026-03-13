@@ -890,7 +890,7 @@ a:hover {
 fieldset[data-step="2"],
 fieldset[data-step="3"],
 fieldset[data-step="final"] {
-  display: flex;
+  display: none;
 }
 
 .quiz-form__left {
