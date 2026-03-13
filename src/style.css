@@ -297,6 +297,10 @@ a:hover {
   color: #92AFCA;
 }
 
+.acceptance__consent-text a:hover {
+  color: var(--accent-green);
+}
+
 .progressbar {
   position: fixed;
   top: 79px;
@@ -582,7 +586,6 @@ a:hover {
 .hero__right {
   z-index: -2;
   width: 47%;
-  /* width: 514px; */
 }
 
 .hero__title {
@@ -887,7 +890,7 @@ a:hover {
 fieldset[data-step="2"],
 fieldset[data-step="3"],
 fieldset[data-step="final"] {
-  display: flex;
+  display: none;
 }
 
 .quiz-form__left {
@@ -1392,18 +1395,6 @@ fieldset[data-step="final"] {
   height: 40px;
   object-fit: contain;
 }
-
-/* .savings__item:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  z-index: 3;
-  top: 50%;
-  right: -18px;
-  width: 40px;
-  height: 40px;
-  background-image: url('../');
-  transform: translateY(-50%);
-} */
 
 .savings__item:first-child {
   border-radius: 15px 0 0 15px;
@@ -2292,10 +2283,6 @@ fieldset[data-step="final"] {
 .team__card.team__card--owner {
   display: none;
 }
-
-/* .team__slider .team__photo {
-  width: 276px;
-} */
 
 .team__stats {
   margin-top: 40px;
@@ -4356,10 +4343,6 @@ fieldset[data-step="final"] {
   }
 
   .deal__bubble {
-    /* top: unset;
-    bottom: 253px;
-    right: -115px;
-    transform: rotate(365deg); */
     display: none;
   }
 
